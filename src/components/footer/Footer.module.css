@@ -141,9 +141,9 @@
     align-items: center;
     position: absolute;
 
-    height: 40em;
+    height: 35em;
 
-    width: 80vw;
+    width: 90vw;
   }
   .ContactContainerText {
     display: flex;
@@ -155,5 +155,20 @@
     display: grid;
     place-content: center;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ContactContainer {
+    display: flex;
+    top: -10vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+
+    height: 40em;
+
+    width: 90vw;
   }
 }
