@@ -1,5 +1,19 @@
-.header {
+.Header {
   width: 100vw;
   height: 1000px;
-  background-color: aquamarine;
+  background-color: var(--primary);
+  color: white;
+}
+
+.RegularText {
+  font-size: 2em;
+}
+.Heading {
+  font-size: 5em;
+}
+.Heading2 {
+  font-size: 3.5em;
+}
+.EnhancedText {
+  color: var(--secondary);
 }

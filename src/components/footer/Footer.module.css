@@ -43,6 +43,7 @@
   height: 20%;
 }
 .FooterLogo {
+  font-family: Bauhaus !important;
   display: flex;
   flex-direction: column;
   padding: 5em;
@@ -60,7 +61,6 @@
 }
 
 .ContactContainer {
-  font-family: JosefinSans;
   overflow: hidden;
   text-align: center;
   position: absolute;
@@ -74,7 +74,7 @@
 }
 .ContainerDiv {
   /* border: 2px #f8dcc1 solid; */
-  font-family: Aqua;
+  font-family: Bauhaus !important;
   width: 90%;
   display: flex;
   justify-content: center;
@@ -88,9 +88,9 @@
   font-weight: 700;
   text-align: center;
 }
-
+/* //Brandon */
 .Subheading {
-  font-family: Aqua;
+  font-family: Bauhaus !important;
   font-size: 2.2em;
   font-weight: 100;
 }
@@ -141,9 +141,9 @@
     align-items: center;
     position: absolute;
 
-    height: 40em;
+    height: 30em;
 
-    width: 90vw;
+    width: 80vw;
   }
   .ContactContainerText {
     display: flex;

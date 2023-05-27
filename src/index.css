@@ -9,6 +9,8 @@ html {
   font-size: 10px;
 }
 * {
+  /* font-family: Bauhaus !important; */
+
   padding: 0;
   margin: 0;
   width: 100%;
@@ -17,12 +19,41 @@ html {
 }
 
 @font-face {
+  font-family: 'Poppins';
+  src: url('./components/assets/fonts/Poppins-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Revans';
+  src: url('./components/assets/fonts/Revans-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Chloe';
+  src: url('./components/assets/fonts/Chloe-Regular.otf') format('truetype');
+}
+@font-face {
   font-family: 'Lato';
   src: url('./components/assets/fonts/Lato-Regular.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Brandon';
+  src: url('./components/assets/fonts/brandon-grotesque-light-58a8a4b38001d.otf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Bavro';
+  src: url('./components/assets/fonts/Bavro-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bauhaus';
+  src: url('./components/assets/fonts/BauhausRegular.ttf') format('truetype');
+}
+@font-face {
   font-family: 'Aqua';
   src: url('./components/assets/fonts/aqua.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('./components/assets/fonts/BebasNeue-Regular.otf') format('truetype');
 }
 @font-face {
   font-family: 'Paradox';
@@ -39,7 +70,7 @@ html {
     format('truetype');
 }
 @font-face {
-  font-family: 'Helvetica Neue ';
+  font-family: 'Helvetica Neue';
   src: url('./components/assets/fonts/Helvetica Neue Regular.otf')
     format('truetype');
 }
