@@ -22,7 +22,7 @@ const RoundedButton = ({
         style={{
           backgroundColor: isHover ? textColor : bgColor,
           color: isHover ? bgColor : textColor,
-          fontSize: '2.2em',
+
           border: isHover ? ` 2px solid ${bgColor}` : ` 2px solid ${textColor}`,
           hover: true,
         }}

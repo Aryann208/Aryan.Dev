@@ -1,9 +1,18 @@
 .Button {
-  padding: 0.5em 1.5em;
+  padding: 0.5em 1em;
+  height: 3em;
+  width: 12em;
   font-weight: 600;
   border-radius: 7em;
-  font-size: 1.8em;
+  font-size: 2em;
 }
 .Button:hover {
   transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 750px) {
+  .Button {
+    height: 3em;
+    padding: 0 1em;
+  }
 }

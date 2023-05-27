@@ -1,16 +1,8 @@
 import React from 'react';
-import './Header.module.css';
-import PulsingSphere from '../pulsingSphere/PulsingSphere';
+import classes from './Header.module.css';
+
 const Header = () => {
-  return (
-    <div className="sphere">
-      <div className={classes.sphere1}>
-        <PulsingSphere />
-        <PulsingSphere />
-        <PulsingSphere />
-      </div>
-    </div>
-  );
+  return <div className={classes.header}></div>;
 };
 
 export default Header;

@@ -16,7 +16,8 @@ const Footer = () => {
               Have a project ?
             </div>
             <div className={`${classes.Subheading2} ${classes.ContainerDiv}`}>
-              Have an idea to develop ?{` Let's`} connect and discuss .
+              Have an idea to develop into a website? {`Let's`} connect and
+              discuss .
             </div>
             <div className={classes.ContainerDiv}>
               <RoundedButton text="Start a project" />
