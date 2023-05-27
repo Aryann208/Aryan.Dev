@@ -27,9 +27,9 @@ const Footer = () => {
           <div className={classes.Logo}>
             <img src={Logo} alt="" />
           </div>
-          <p className={classes.Subheading}>
-            Living, learning, & leveling up one day at a time.
-          </p>
+          <div className={classes.Subheading}>
+            <p>Living, learning, & leveling up one day at a time.</p>
+          </div>
         </div>
         <div className={classes.FooterSocialButtons}>
           <SocialButtons icon={<FaLinkedinIn />} />
