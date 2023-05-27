@@ -1,0 +1,140 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  display: grid;
+  place-content: center;
+  background-color: var(--primary);
+  width: 100vw;
+  height: 90vh;
+  color: var(--secondary);
+}
+.Logo {
+  z-index: 1111111;
+  width: 40px;
+  height: 40px;
+}
+
+.FooterTextContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15em;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  width: 50vw;
+}
+.FooterText {
+  display: grid;
+  place-content: center;
+  margin-top: 5em;
+  font-size: 2em;
+  width: 80%;
+  height: 20%;
+  color: white;
+}
+.FooterSocialButtons {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 60%;
+  height: 20%;
+}
+.FooterLogo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+}
+.ContactContainerText {
+  padding: 0 2em;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.ContactContainer {
+  overflow: hidden;
+
+  position: absolute;
+  top: -5vh;
+  border: 3px #f8dcc1 solid;
+  height: 15em;
+  border-radius: 15px;
+  width: 85vw;
+  background-color: #a41c3c;
+  color: #f8dcc1;
+}
+
+.Heading2 {
+  /**/
+
+  font-size: 3.2em;
+  font-weight: 700;
+  text-align: center;
+}
+.Subheading {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.Subheading2 {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+.ContainerDiv {
+  width: 90%;
+  /* border: 1px white solid; */
+  padding: 1em;
+}
+
+@media screen and (max-width: 750px) {
+  .Footer {
+    width: 100%;
+    height: 90vh;
+  }
+  .FooterTextContainer {
+    height: 70vh;
+    width: 80vw;
+  }
+  .FooterLogo {
+    width: 100%;
+    height: 50%;
+    padding-top: 5em;
+  }
+  .FooterSocialButtons {
+    width: 90%;
+    height: 20%;
+    margin: 0;
+    padding: 10em 0;
+  }
+  .FooterText {
+    font-size: 2em;
+    position: absolute;
+    bottom: 1em;
+    width: 150%;
+    height: 10%;
+  }
+  .ContactContainer {
+    display: flex;
+    top: -25vh;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+
+    border: 1.5px #f8dcc1 solid;
+    height: 35em;
+
+    width: 80vw;
+  }
+  .ContactContainerText {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+}

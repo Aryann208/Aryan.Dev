@@ -1,3 +1,28 @@
+:root {
+  --primary: #422057;
+  --secondary: #fcf951;
+}
+html {
+  font-size: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 8px;
+  }
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
