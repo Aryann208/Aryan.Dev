@@ -1,6 +1,9 @@
 :root {
   --primary: #422057;
   --secondary: #fcf951;
+  /* --primary: #0454fc;
+  --secondary: #c6d6f2;
+ */
 }
 html {
   font-size: 10px;
@@ -12,6 +15,35 @@ html {
   height: 100%;
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Lato';
+  src: url('./components/assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Aqua';
+  src: url('./components/assets/fonts/aqua.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Paradox';
+  src: url('./components/assets/fonts/bnparadox.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./components/assets/fonts/Merriweather-Regular.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'JosefinSans';
+  src: url('./components/assets/fonts/JosefinSans-VariableFont_wght.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue ';
+  src: url('./components/assets/fonts/Helvetica Neue Regular.otf')
+    format('truetype');
+}
+
 @media screen and (max-width: 950px) {
   html {
     font-size: 9px;

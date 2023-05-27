@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import classes from './RoundedButton.module.css';
 const RoundedButton = ({
-  bgColor = '#a41c3c',
-  textColor = ' #F8DCC1',
+  bgColor = ' #F8DCC1',
+  borderColor = '#a41c3c',
+  textColor = '#a41c3c',
   text = 'Button',
 }) => {
   const [isHover, setIsHover] = useState(false);
