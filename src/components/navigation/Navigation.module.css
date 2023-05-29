@@ -1,0 +1,32 @@
+.Navigation {
+  font-size: 2em !important;
+  display: grid;
+  grid-template-columns: 55% 40% 5%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--skin);
+  color: var(--primary);
+  width: 100%;
+  height: 100vh;
+  list-style: none;
+  font-family: Paradox;
+  box-sizing: border-box;
+}
+
+.NavigationList {
+  padding: 5em 0em 5em 0;
+  margin-right: 2em;
+  list-style: none;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.NavigationListSpan {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  align-items: flex-end;
+  font-size: 6em;
+  border-bottom: 3px solid var(--red);
+}

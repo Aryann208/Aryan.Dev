@@ -1,3 +1,15 @@
 .App {
   text-align: center;
+  font-family: Merriweather;
+  box-sizing: border-box;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--skin);
+  background: white;
+  transform-origin: 0%;
 }

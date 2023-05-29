@@ -1,24 +1,107 @@
+.headerpseudo {
+  background-image: url('../assets/images/darkbg.jpg');
+  z-index: -111;
+}
+
 .Header {
+  min-height: 100vh;
+  width: 100%;
   font-family: JosefinSans !important;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  /* padding-left: 5em; */
+  grid-template-columns: 7fr 2fr;
   text-align: right;
   background-color: var(--primary);
   color: white;
   color: var(--secondary);
+  box-sizing: border-box;
+}
+.LeftSection {
+  display: grid;
+
+  grid-template-rows: 20% 30% 20%;
+}
+.BottomAlignText {
+  padding-left: 4em;
+  /* border: 1px white solid; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.TechStack {
+  /* border: 1px white solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  height: 7em;
+  width: 50%;
+  background: rgba(248, 220, 193, 0.75);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18.5px);
+  -webkit-backdrop-filter: blur(18.5px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.RightSection {
+  /* border: 1px white solid; */
+  visibility: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: Paradox !important;
+  color: var(--skin);
+  border-radius: 30px 0 0 0;
+  background-color: var(--red);
+}
+.NavigationListSpan {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  align-items: flex-end;
+  font-size: 10em;
+  background-color: var(--skin);
+  border-radius: 20px 0 0 0;
+  /* border-bottom: 4px solid white; */
+  margin: 0.1em 0;
+  /* border-top: 4px solid white; */
+}
+.NavigationList {
+  font-weight: 200;
+  /* padding: 5em 0em 5em 0; */
+  /* margin-right: 2em; */
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  flex-direction: column;
+  color: var(--red);
 }
 
 .RegularText {
   /* border: 1px white solid; */
-  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  font-size: 1.5em;
 }
 .Heading {
-  font-size: 5em;
+  font-size: 7em;
 }
 .Heading2 {
   font-size: 3.5em;
 }
 .EnhancedText {
   color: white;
+}
+.SocialButtons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
 }

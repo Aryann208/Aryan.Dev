@@ -1,20 +1,19 @@
 :root {
   --primary: #422057;
   --secondary: #fcf951;
-  /* --primary: #0454fc;
-  --secondary: #c6d6f2;
- */
+  --red: #a41c3c;
+  --skin: #f8dcc1;
+
+  --blue: #0454fc;
+  --bluewhite: #c6d6f2;
 }
 html {
   font-size: 10px;
 }
 * {
-  /* font-family: Paradox !important; */
-
   padding: 0;
   margin: 0;
-  width: 100%;
-  height: 100%;
+
   box-sizing: border-box;
 }
 
@@ -52,6 +51,30 @@ html {
   src: url('./components/assets/fonts/aqua.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Quentin';
+  src: url('./components/assets/fonts/NirtieryQuentin-jEMPv.otf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Cardinal';
+  src: url('./components/assets/fonts/Cardinal.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Millennium';
+  src: url('./components/assets/fonts/Millennium-Regular_0.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Blackletter';
+  src: url('./components/assets/fonts/BlackletterExtrabold-51DV.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'KingsandPirates';
+  src: url('./components/assets/fonts/KingsAndPirates-p7EAK.ttf')
+    format('truetype');
+}
+@font-face {
   font-family: 'BebasNeue';
   src: url('./components/assets/fonts/BebasNeue-Regular.otf') format('truetype');
 }
@@ -82,7 +105,7 @@ html {
 }
 @media screen and (max-width: 750px) {
   html {
-    font-size: 9px;
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 450px) {
