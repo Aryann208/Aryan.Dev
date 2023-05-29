@@ -7,11 +7,11 @@
 
 @media screen and (max-width: 750px) {
   .Section {
-    max-height: 40vh;
+    max-height: 30vh;
   }
 }
 @media screen and (max-width: 450px) {
   .Section {
-    max-height: 40vh;
+    max-height: 30vh;
   }
 }

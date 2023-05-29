@@ -18,7 +18,7 @@
   color: white;
   color: var(--secondary);
   box-sizing: border-box;
-  border: 11px solid pink;
+  /* border: 11px solid pink; */
 }
 .LeftSection {
   /* display: grid;
@@ -116,6 +116,8 @@
   color: var(--yellow) !important;
 }
 .QuotationText {
+  display: inline;
+  font-size: inherit;
   color: var(--skin);
 }
 .EnhancedText {
@@ -138,7 +140,7 @@
     width: 100%;
   }
   .LeftSection {
-    min-height: 70vh;
+    min-height: 80vh;
   }
   .RightSection {
     min-height: 40vh;

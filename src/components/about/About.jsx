@@ -9,7 +9,7 @@ const About = () => {
       <div className={classes.AboutTextContainer}>
         <h1 className={classes.AboutHeading}>About Me</h1>
         <p className={classes.AboutText}>
-          Hi! I am Aryan, I am a frontend developer using React JS and Next JS
+          Hi ! I am Aryan, I am a frontend developer using React JS and Next JS
           for development . I have worked and developed my skills in web
           development and React JS for 3+ years. I have worked with various
           animation libraries such as Framer Motion , React Spring , GSAP etc .

@@ -3,7 +3,7 @@ import classes from './Projects.module.css';
 import TechStack from '../techStack/TechStack';
 const text =
   'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, cum accusamus. Voluptas repudiandae, quae error beatae aperiam dolor id consectetur dolor sit amet consectetur adipisicing elit. Tempora, cum accusamus. Voluptas repudiandae, quae error beatae aperiam dolor id consectetur.';
-const Projects = ({ title = 'Roject Title', description = `${text}` }) => {
+const Projects = ({ title = 'Project Title', description = `${text}` }) => {
   return (
     <div className={classes.Project}>
       <div className={classes.Description}>
@@ -19,7 +19,7 @@ const Projects = ({ title = 'Roject Title', description = `${text}` }) => {
           <p className={classes.RegularText}>{description}</p>
         </div>
       </div>
-      <div></div>
+      <div className={classes.ProjectViewContainer}></div>
     </div>
   );
 };

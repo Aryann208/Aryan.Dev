@@ -7,6 +7,7 @@ import Navigation from './components/navigation/Navigation';
 import Section from './components/section/Section';
 import About from './components/about/About';
 import Projects from './components/projects/Projects';
+import Skills from './components/skills/Skills';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -36,10 +37,15 @@ function App() {
 
         <Footer />
   </Parallax>*/}
+      <motion.div className="progress-bar" style={{ scaleX }}></motion.div>
+
       <Header />
       <Section />
       <About />
       <Section />
+      <Projects />
+      <Section />
+      <Skills />
       <Footer />
     </div>
   );
