@@ -10,17 +10,13 @@ const Header = () => {
     <div className="headerpseudo">
       <div className={classes.Header}>
         <div className={classes.LeftSection}>
-          <p className={`${classes.RegularText} ${classes.BottomAlignText}`}>
-            hi, i am{' '}
-          </p>
           <p className={classes.RegularText}>
             <span className={`${classes.Heading} ${classes.EnhancedText}`}>
               Aryan Trivedi
             </span>
-            <br />a{' '}
+
             <span className={`${classes.Heading2} ${classes.EnhancedText}`}>
-              <span className={classes.QuotationText}>{` </`}</span>frontend
-              developer<span className={classes.QuotationText}>{`>`}</span>
+              frontend developer
             </span>
           </p>
           <div className={classes.TechStack}>

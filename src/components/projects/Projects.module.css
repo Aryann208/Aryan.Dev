@@ -16,13 +16,10 @@
   width: 100%;
   height: 90%;
   margin: auto;
-  width: fit-content;
-  block-size: fit-content;
 }
 .Heading {
   font-size: 3.5em;
-  width: fit-content;
-  block-size: fit-content;
+
   font-weight: bold;
   font-family: Lato;
   color: var(--skin);

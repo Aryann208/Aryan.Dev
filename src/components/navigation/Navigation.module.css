@@ -30,3 +30,10 @@
   font-size: 6em;
   border-bottom: 3px solid var(--red);
 }
+
+@media screen and (max-width: 950px) {
+  .Navigation {
+    margin: 10em;
+    min-height: 90vh;
+  }
+}

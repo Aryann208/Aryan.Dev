@@ -1,6 +1,8 @@
 .About {
-  display: grid;
-  grid-template-columns: 70% 30%;
+  /* display: grid;
+  grid-template-columns: 70% 30%; */
+
+  border: 11px solid lightgreen;
   margin: 0;
   padding: 10em 5em;
   width: 100%;
@@ -30,6 +32,11 @@
 }
 .HighlightedText {
   display: inline;
+  color: var(--skin);
+}
+
+.Button {
+  margin: 3% 0;
 }
 
 .AboutTextContainer {
@@ -45,7 +52,9 @@
 }
 .AboutText {
   color: white !important;
-  margin-top: 2.5em;
+  word-wrap: break-word;
+  margin: 2.5em 0;
+  white-space: normal;
   width: fit-content;
   block-size: fit-content;
   text-align: left;
@@ -68,45 +77,81 @@
 }
 @media screen and (max-width: 750px) {
   .About {
-    display: flex;
-    min-height: 40vh;
-    justify-content: center;
-    align-items: center;
+    margin: 5% 0;
+    padding: 0 2%;
     width: 100%;
-  }
-  .AboutTextContainer {
-    display: grid;
-    grid-template-rows: 15% 85%;
-    /* background-color: white; */
-
-    width: 100%;
-    height: 100%;
-    border-radius: 40px 0 0px 40px;
-  }
-  .AboutHeading {
-    display: flex;
-    padding-left: 1em;
-    justify-content: flex-start;
-    align-items: center;
+    margin: auto;
+    min-height: 140vh;
     background-color: var(--primary);
     color: white;
   }
+  .InfiniteScroll {
+    /* border: 1px solid white; */
+    visibility: visible;
+  }
+  .DevImage {
+    mix-blend-mode: lighten;
+    z-index: 111;
+    height: 40em;
+    width: 40em;
+  }
+
+  .Button {
+    margin-top: 5em;
+  }
+
+  .AboutHeading {
+    display: flex;
+
+    align-items: flex-end;
+    font-family: Lato;
+    font-size: 3em;
+    color: var(--skin);
+  }
+  .HighlightedText {
+    display: inline;
+    color: var(--skin);
+    font-size: inherit;
+  }
+
+  .AboutTextContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    /* background-color: white; */
+    margin: 3em auto;
+    padding: 0.5em;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    border: var(--skin) 0px solid;
+  }
   .AboutText {
-    color: var(--primary);
-    margin-top: 0.5em;
+    color: white !important;
+    word-wrap: break-word;
+    margin-bottom: 1.5em;
+    white-space: normal;
     width: fit-content;
     block-size: fit-content;
     text-align: left;
     line-height: 150%;
-
-    font-family: Merriweather;
-    font-size: 1.6em;
-    letter-spacing: 0.08em;
-    font-weight: 500;
-    padding: 1.5em;
     color: var(--skin);
+    font-family: Merriweather;
+    font-size: 2em;
+    letter-spacing: 0.08em;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary);
+    /* padding: 5em; */
+    /* background: rgba(248, 220, 193, 0.75);
+  
+    backdrop-filter: blur(18.5px);
+    -webkit-backdrop-filter: blur(18.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18); */
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 450px) {
 }

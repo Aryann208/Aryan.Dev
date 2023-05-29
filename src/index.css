@@ -16,6 +16,12 @@ html {
 
   box-sizing: border-box;
 }
+div {
+  white-space: nowrap;
+}
+div {
+  white-space: normal;
+}
 
 @font-face {
   font-family: 'Poppins';

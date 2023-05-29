@@ -2,6 +2,7 @@
   text-align: center;
   font-family: Merriweather;
   box-sizing: border-box;
+  background-color: var(--primary);
 }
 .progress-bar {
   position: fixed;

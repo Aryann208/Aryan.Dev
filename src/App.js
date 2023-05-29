@@ -1,6 +1,5 @@
 import './App.css';
 import { motion, useScroll, useSpring } from 'framer-motion';
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -38,9 +37,8 @@ function App() {
         <Footer />
   </Parallax>*/}
       <Header />
-
-      <Navigation />
-      <Projects />
+      <Section />
+      <About />
       <Section />
       <Footer />
     </div>

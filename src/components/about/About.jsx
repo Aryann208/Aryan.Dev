@@ -26,9 +26,10 @@ const About = () => {
           C, C++, Python, JavaScript , Node Js , Express Js etc and I am up for
           projects requiring to integrate them .
         </p>
-        <RoundedButton text="Resume" />
+        <div className={classes.Button}>
+          <RoundedButton text="Resume" />
+        </div>
       </div>
-      <div className={classes.InfiniteScroll}></div>
     </div>
   );
 };

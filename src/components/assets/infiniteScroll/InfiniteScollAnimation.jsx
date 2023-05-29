@@ -28,7 +28,7 @@ const TAGS = [
   'Framer',
   'Frontend',
 ];
-const DURATION = 15000;
+const DURATION = 18000;
 const ROWS = 10;
 const TAGS_PER_ROW = 10;
 

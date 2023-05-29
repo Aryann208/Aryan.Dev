@@ -5,10 +5,12 @@
 
 .Header {
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   font-family: JosefinSans !important;
   display: grid;
+  position: relative;
   margin: 0;
+
   /* padding-left: 5em; */
   grid-template-columns: 7fr 4fr;
   text-align: right;
@@ -16,17 +18,21 @@
   color: white;
   color: var(--secondary);
   box-sizing: border-box;
+  border: 11px solid pink;
 }
 .LeftSection {
   /* display: grid;
 
   grid-template-rows: 20% 30% 20%; */
   display: grid;
+  position: relative;
   place-content: center;
-
+  width: fit-content;
+  block-size: fit-content;
   gap: 3em;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
 }
 .BottomAlignText {
   padding-left: 4em;
@@ -38,6 +44,7 @@
 .TechStack {
   /* border: 1px white solid; */
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -90,9 +97,15 @@
 }
 
 .RegularText {
-  /* border: 1px white solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
   text-align: center;
   width: 100%;
+  width: fit-content;
+  block-size: fit-content;
   font-size: 1.5em;
 }
 .Heading {
@@ -120,13 +133,15 @@
   .Header {
     display: flex;
     flex-direction: column;
-    min-height: 180vh;
+    min-height: 140vh;
+
+    width: 100%;
   }
   .LeftSection {
-    min-height: 100vh;
+    min-height: 70vh;
   }
   .RightSection {
-    min-height: 30vh;
+    min-height: 40vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -136,5 +151,9 @@
     color: var(--skin);
 
     background-color: var(--primary);
+  }
+  .TechStack {
+    width: 70%;
+    margin-bottom: 10em;
   }
 }
