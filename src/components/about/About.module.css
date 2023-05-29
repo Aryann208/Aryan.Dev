@@ -1,13 +1,18 @@
 .About {
+  display: grid;
+  grid-template-columns: 70% 30%;
   margin: 0;
-  padding: 5em;
+  padding: 10em 5em;
   width: 100%;
   margin: auto;
   min-height: 100vh;
   background-color: var(--primary);
   color: white;
 }
-
+.InfiniteScroll {
+  /* border: 1px solid white; */
+  visibility: visible;
+}
 .DevImage {
   mix-blend-mode: lighten;
   z-index: 111;
@@ -21,7 +26,7 @@
   align-items: center;
   font-family: Lato;
   font-size: 3em;
-  color: white;
+  color: var(--skin);
 }
 .HighlightedText {
   display: inline;
@@ -32,12 +37,14 @@
   flex-direction: column;
   /* background-color: white; */
   margin: 4em auto;
-  width: 70%;
-  height: 100%;
-  border-radius: 40px 0 0px 40px;
+  padding: 5em;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  border: var(--skin) 4px solid;
 }
 .AboutText {
-  color: var(--primary);
+  color: white !important;
   margin-top: 2.5em;
   width: fit-content;
   block-size: fit-content;
@@ -45,7 +52,7 @@
   line-height: 150%;
   color: var(--skin);
   font-family: Merriweather;
-  font-size: 2.2em;
+  font-size: 2em;
   letter-spacing: 0.08em;
   font-weight: 500;
   width: 100%;
@@ -62,7 +69,7 @@
 @media screen and (max-width: 750px) {
   .About {
     display: flex;
-    min-height: 20vh;
+    min-height: 40vh;
     justify-content: center;
     align-items: center;
     width: 100%;

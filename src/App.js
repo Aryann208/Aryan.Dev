@@ -18,24 +18,31 @@ function App() {
   });
   return (
     <div className="App">
-      <Parallax pages={5}>
+      {/*     <Parallax pages={4}>
         <motion.div className="progress-bar" style={{ scaleX }}></motion.div>
-        <ParallaxLayer offset={0} speed={1.5}>
-          <Header />
-        </ParallaxLayer>
-        <ParallaxLayer offset={1.5} speed={1.5}>
+
+        <Header />
+
+        <ParallaxLayer offset={1} speed={1.5}>
           <About />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.5} speed={0.5}>
+        <Section />
+        <ParallaxLayer offset={2} speed={0.5}>
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5} speed={1.5}>
+        <Section />
+        <ParallaxLayer offset={3} speed={1.5}>
           <Navigation />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.5} speed={0.5}>
-          <Footer />
-        </ParallaxLayer>
-      </Parallax>
+
+        <Footer />
+  </Parallax>*/}
+      <Header />
+
+      <Navigation />
+      <Projects />
+      <Section />
+      <Footer />
     </div>
   );
 }

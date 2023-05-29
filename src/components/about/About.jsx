@@ -2,12 +2,10 @@ import React from 'react';
 import classes from './About.module.css';
 import Dev from '../assets/images/dev2.jpg';
 import RoundedButton from '../assets/roundedButton/RoundedButton';
+import InfiniteScroll from '../assets/infiniteScroll/InfiniteScollAnimation';
 const About = () => {
   return (
     <div className={classes.About}>
-      <div className={classes.Misc}>
-        {/*      <img className={classes.DevImage} src={Dev} alt="" />*/}
-      </div>
       <div className={classes.AboutTextContainer}>
         <h1 className={classes.AboutHeading}>About Me</h1>
         <p className={classes.AboutText}>
@@ -28,8 +26,9 @@ const About = () => {
           C, C++, Python, JavaScript , Node Js , Express Js etc and I am up for
           projects requiring to integrate them .
         </p>
+        <RoundedButton text="Resume" />
       </div>
-      <RoundedButton text="Resume" />
+      <div className={classes.InfiniteScroll}></div>
     </div>
   );
 };

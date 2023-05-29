@@ -3,6 +3,7 @@ import classes from './Header.module.css';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import SocialButtons from '../assets/socialButtons/SocialButtons';
+import InfiniteScroll from '../assets/infiniteScroll/InfiniteScollAnimation';
 
 const Header = () => {
   return (
@@ -43,14 +44,7 @@ const Header = () => {
           </div>
         </div>
         <div className={classes.RightSection}>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div className={classes.NavigationList}>
-            <span className={classes.NavigationListSpan}>About</span>
-            <span className={classes.NavigationListSpan}>Projects</span>
-            <span className={classes.NavigationListSpan}>Contact</span>
-          </div>
+          <InfiniteScroll />
         </div>
       </div>
     </div>
@@ -58,3 +52,12 @@ const Header = () => {
 };
 
 export default Header;
+
+// <div></div>
+//           <div></div>
+//           <div></div>
+//           <div className={classes.NavigationList}>
+//             <span className={classes.NavigationListSpan}>About</span>
+//             <span className={classes.NavigationListSpan}>Projects</span>
+//             <span className={classes.NavigationListSpan}>Contact</span>
+//           </div>
