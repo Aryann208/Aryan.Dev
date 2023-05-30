@@ -16,9 +16,9 @@ const Projects = () => {
   return (
     <div className={classes.Project}>
       <ProjectHolder />
+      <ProjectHolder isReverse={true} />
       <ProjectHolder />
-      <ProjectHolder />
-      <ProjectHolder />
+      <ProjectHolder isReverse={true} />
     </div>
   );
 };
