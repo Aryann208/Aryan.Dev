@@ -1,0 +1,113 @@
+.ProjectHolder {
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .ProjectHolder {
+    /* display: grid;
+  position: relative;
+  grid-template-rows: 30% 60%; */
+
+    padding: 5em 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--red);
+    color: white;
+
+    /* border: 10px pink solid; */
+  }
+
+  .ProjectView {
+    max-height: 45vh;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    overflow-y: scroll;
+    margin-bottom: 5em;
+    gap: 4em;
+    padding: 0 1em 0 1em;
+
+    background: rgba(250, 230, 218, 0.9);
+    background-color: transparent;
+    /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px); */
+    /* border-radius: 10px; */
+  }
+  .ProjectImage {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .Details {
+    padding: 3em;
+    color: black;
+    display: grid;
+    grid-template-rows: 10% 20% 60%;
+
+    /* display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: space-around; */
+    text-align: left;
+    color: var(--primary);
+    background-color: white;
+    border-radius: 0 40px 0 40px;
+    width: 100%;
+    min-height: 50vh;
+    margin: auto;
+
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    background: rgba(250, 230, 218, 0.85);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+  }
+  .Title {
+    font-size: 3.5em;
+
+    font-weight: bold;
+    font-family: Lato;
+    color: var(--red);
+  }
+  .DescriptionContainer {
+    /* border: 10px solid black; */
+    overflow: scroll;
+    max-height: 70vh;
+    margin-top: 3em;
+  }
+
+  .RegularText {
+    margin: 0.6em 0;
+    line-height: 150%;
+
+    font-family: Merriweather;
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+  }
+
+  .TechStackContainer {
+    display: flex;
+    width: 90%;
+    margin: 3em 0;
+    /* border: 1px solid black; */
+
+    /* border: 1px white solid; */
+  }
+}
+@media screen and (max-width: 450px) {
+  .ProjectView {
+    min-height: 35vh;
+    width: 90%;
+  }
+}

@@ -3,6 +3,7 @@
   grid-template-columns: 70% 30%; */
 
   /* border: 11px solid lightgreen; */
+  position: relative;
   margin: 0;
   padding: 10em 5em;
   width: 100%;

@@ -42,7 +42,7 @@ function App() {
       <Header />
       <Section />
       <About />
-      <Section />
+
       <Projects />
       <Section />
       <Skills />
