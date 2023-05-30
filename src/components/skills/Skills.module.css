@@ -1,4 +1,5 @@
 .Skills {
-  min-height: 30vh;
+  min-height: 50vh;
+  width: 100%;
   background-color: var(--skin);
 }
