@@ -3,8 +3,11 @@ import classes from './ProjectHolder.module.css';
 import TechStack from '../techStack/TechStack';
 import TMDB from '../assets/images/TMDB.jpg';
 import LowResProjectHolder from '../lowResProjectHolder/LowResProjectHolder';
+import NormalButton from '../normalButton/NormalButton';
+import { BsBrowserChrome, BsGithub } from 'react-icons/bs';
+import { AiFillGithub } from 'react-icons/ai';
 const text =
-  'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum maiores magni doloribus placeat optio rerum dolorum libero beatae earum ipsam debitis mollitia, dolore enim suscipit, ratione iusto esse, non architecto. Aliquid nisi labore cupiditate, cumque illo quod architecto odit possimus dolorum optio saepe harum. Nesciunt, esse quae. Aperiam aliquid, ipsa quod voluptatem deleniti quos natus quaerat! Sed non magni fugit! In, id quo quis veniam tempore perspiciatis, porro facilis accusantium temporibus minus corporis fugit, libero consequuntur tempora? Nam vero eius recusandae, veniam est, earum aut delectus alias illum, quos soluta! Unde dignissimos rem libero vero, quisquam tempore nobis expedita minima Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum maiores magni doloribus placeat optio rerum dolorum libero beatae earum ipsam debitis mollitia, dolore enim suscipit, ratione iusto esse, non architecto. Aliquid nisi labore cupiditate, cumque illo quod architecto odit possimus dolorum optio saepe harum. Nesciunt, esse quae. Aperiam aliquid, ipsa quod voluptatem deleniti quos natus quaerat! Sed non magni fugit! In, id quo quis veniam tempore perspiciatis, porro facilis accusantium temporibus minus corporis fugit, libero consequuntur tempora? Nam vero eius recusandae, veniam est, earum aut delectus alias illum, quos soluta! Unde dignissimos rem libero vero, quisquam tempore nobis expedita minima laboriosam, at molestias. Quis placeat ipsa error quasi vitae quidem corrupti assumenda cumque asperiores maxime veritatis soluta, iste ratione? Animi.';
+  'Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing';
 const ProjectHolder = ({
   title = 'Project Title',
   description = text,
@@ -42,7 +45,8 @@ const ProjectHolder = ({
             <p className={classes.Title}>{title}</p>
           </div>
           <div className={classes.TechStackContainer}>
-            <TechStack />
+            <NormalButton icon={<BsBrowserChrome />} />
+            <NormalButton icon={<BsGithub />} />
           </div>
           <div className={classes.DescriptionContainer}>
             {/* <span className={classes.Heading}>Description </span>*/}

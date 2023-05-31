@@ -1,7 +1,7 @@
 .ProjectHolder {
   display: none;
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .ProjectHolder {
     /* display: grid;
   position: relative;
@@ -11,10 +11,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-
+    border-bottom: 1px var(--skin) solid;
     width: 100%;
     min-height: 100vh;
-    background-color: var(--red);
+
     color: white;
 
     /* border: 10px pink solid; */
@@ -28,7 +28,7 @@
     place-content: center;
     grid-auto-flow: column;
     grid-auto-columns: 100%;
-    overflow-y: scroll;
+    overflow-x: auto;
     margin-bottom: 5em;
     gap: 4em;
     padding: 0 1em 0 1em;
@@ -38,11 +38,12 @@
     /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(9.5px);
   -webkit-backdrop-filter: blur(9.5px); */
-    /* border-radius: 10px; */
+    border-radius: 10px;
   }
   .ProjectImage {
     margin: 0 auto;
     width: 100%;
+    border-radius: 10px;
   }
 
   .Details {
@@ -81,9 +82,12 @@
   }
   .DescriptionContainer {
     /* border: 10px solid black; */
-    overflow: scroll;
+    overflow-y: auto;
     max-height: 70vh;
     margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .RegularText {
@@ -91,7 +95,7 @@
     line-height: 150%;
 
     font-family: Merriweather;
-    font-size: 1.5em;
+    font-size: 1.6em;
     letter-spacing: 0.03em;
     font-weight: 500;
   }

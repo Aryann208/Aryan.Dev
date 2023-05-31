@@ -44,7 +44,7 @@ function App() {
       <About />
 
       <Projects />
-      <Section />
+
       <Skills />
       <Footer />
     </div>

@@ -1,11 +1,11 @@
 .ProjectHolder {
   display: grid;
   position: relative;
-  grid-template-columns: 30% 70%;
-  padding: 5em;
+  grid-template-columns: 40% 60%;
+  place-content: center;
   width: 100%;
-  height: 100%;
-
+  min-height: 100vh;
+  border-bottom: 1px var(--skin) solid;
   color: white;
   /* border: 11px orange solid; */
 }
@@ -23,23 +23,27 @@
   color: var(--primary);
   background-color: white;
   border-radius: 0 40px 0 40px;
-  width: 100%;
+  min-width: 70%;
+  max-width: 80%;
 
-  min-height: 80vh;
-  max-height: 80vh;
+  min-height: 50vh;
+  max-height: 90vh;
   margin: auto;
 }
 .Title {
   font-size: 3.5em;
-
+  position: relative;
   font-weight: bold;
   font-family: Lato;
   color: var(--red);
 }
 .DescriptionContainer {
   /* border: 10px solid black; */
-  overflow: scroll;
+  overflow: auto;
   max-height: 70vh;
+  display: grid;
+  position: relative;
+  place-content: center;
 }
 
 .RegularText {
@@ -55,6 +59,7 @@
 .TechStackContainer {
   display: flex;
   margin: 1em 0;
+  position: relative;
   /* border: 1px solid black; */
 
   /* border: 1px white solid; */
@@ -63,26 +68,38 @@
 .ProjectViewContainer {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  margin: 0 auto;
   width: 100%;
-  min-height: 80vh;
+  max-height: 90vh;
+  border-radius: 3.5em 0 0 3.5em;
+  padding: 3em 0;
+  padding-right: 2em;
+
+  background: #ffffff;
+  box-shadow: inset 34px 34px 68px #d6d6d6, inset -34px -34px 68px #ffffff;
 }
 .ProjectView {
-  min-height: 80vh;
-  width: 90%;
+  position: relative;
+  min-height: 70vh;
+  max-height: 70vh;
+  max-width: 90%;
+
   display: grid;
   place-content: center;
   grid-auto-flow: column;
   grid-auto-columns: 95%;
-  overflow-x: scroll;
-  background-color: var(--skin);
+  overflow-x: auto;
+  background-color: white !important;
   background: rgba(255, 241, 228, 0.945);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(16.5px);
   -webkit-backdrop-filter: blur(16.5px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  border: black 10px solid;
 }
 
 .ProjectImage {
@@ -94,12 +111,13 @@
 .ProjectHolderRev {
   display: grid;
   position: relative;
-  grid-template-columns: 70% 30%;
-  padding: 5em;
+  grid-template-columns: 55% 45%;
+  place-content: center;
   width: 100%;
-  height: 100%;
-
+  min-height: 100vh;
+  border-bottom: 1px var(--skin) solid;
   color: white;
+
   /* border: 11px orange solid; */
 }
 
@@ -116,22 +134,33 @@
   color: var(--primary);
   background-color: white;
   border-radius: 40px 0 40px 0;
-  width: 100%;
-  min-height: 80vh;
-  max-height: 80vh;
+  min-width: 70%;
+  max-width: 80%;
+
+  min-height: 50vh;
+  max-height: 90vh;
   margin: auto;
 }
 
 .ProjectViewContainerRev {
   position: relative;
   display: flex;
-  align-items: center;
+
   justify-content: flex-start;
+
+  background-color: white;
+  margin: 0 auto;
   width: 100%;
-  min-height: 90%;
+  max-height: 90vh;
+  border-radius: 0 3.5em 3.5em 0;
+  padding: 3em 0;
+  padding-left: 2em;
+
+  background: #ffffff;
+  box-shadow: inset -34px 34px 68px #d6d6d6, inset 34px -34px 68px #ffffff;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   .ProjectHolder {
     display: none;
   }
