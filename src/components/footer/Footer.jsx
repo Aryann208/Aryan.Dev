@@ -8,7 +8,7 @@ import RoundedButton from '../assets/roundedButton/RoundedButton';
 
 const Footer = () => {
   return (
-    <div className={classes.Footer}>
+    <div className={classes.Footer} id="footer">
       <div className={classes.FooterTextContainer}>
         <div className={classes.ContactContainer}>
           <div className={classes.ContactContainerText}>

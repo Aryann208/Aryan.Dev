@@ -13,6 +13,6 @@
   right: 0;
   height: 10px;
   background: var(--skin);
-  background: white;
+  background: var(--red);
   transform-origin: 0%;
 }

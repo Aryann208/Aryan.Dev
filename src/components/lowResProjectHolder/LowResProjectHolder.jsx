@@ -15,7 +15,11 @@ const LowResProjectHolder = ({
   isReverse = false,
 }) => {
   return (
-    <div className={classes.ProjectHolder}>
+    <div
+      className={
+        isReverse ? `${classes.ProjectHolderRev}` : `${classes.ProjectHolder}`
+      }
+    >
       <div className={classes.ProjectView}>
         <img className={classes.ProjectImage} src={TMDB} alt="" />
         <img className={classes.ProjectImage} src={TMDB} alt="" />
@@ -27,12 +31,13 @@ const LowResProjectHolder = ({
         <div>
           <p className={classes.Title}>{title}</p>
         </div>
-        <div className={classes.TechStackContainer}>
-          <NormalButton icon={<BsBrowserChrome />} />
-          <NormalButton icon={<BsGithub />} />
-        </div>
+
         <div className={classes.DescriptionContainer}>
           <p className={classes.RegularText}>{description}</p>
+          <div className={classes.TechStackContainer}>
+            <NormalButton icon={<BsBrowserChrome />} />
+            <NormalButton icon={<BsGithub />} />
+          </div>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import InfiniteScroll from '../assets/infiniteScroll/InfiniteScollAnimation';
 const Header = () => {
   return (
     <div className="headerpseudo">
-      <div className={classes.Header}>
+      <div className={classes.Header} id="header">
         <div className={classes.LeftSection}>
           <div className={classes.RegularText}>
             <span className={`${classes.Heading} ${classes.EnhancedText}`}>

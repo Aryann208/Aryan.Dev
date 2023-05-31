@@ -8,17 +8,18 @@
   align-items: center;
   /* background-color: #4d4dff; */
   background-color: var(--primary);
+  background-color: var(--skin);
 }
 
 .Heading {
-  background-color: var(--primary);
+  background-color: var(--red) !important;
   font-size: 3.5em;
   height: auto;
   width: 80%;
   position: relative;
   font-weight: bold;
   font-family: Lato;
-  color: var(--secondary);
+  color: white;
   margin-bottom: 1em;
   border-radius: 20px;
   padding: 1em;
@@ -42,7 +43,7 @@
   border-radius: 50px;
   background: #ffffff;
   box-shadow: inset 35px 35px 70px #ededed, inset -35px -35px 70px #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 3px solid rgba(255, 255, 255, 0.18);
 }
 
 .SkillImage {
@@ -62,6 +63,19 @@
     padding: 2% 3%;
     gap: 20% 7%;
   }
+  .Heading {
+    background-color: var(--primary);
+    font-size: 3.5em;
+    height: auto;
+    width: 80%;
+    position: relative;
+    font-weight: bold;
+    font-family: Lato;
+    color: white;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    padding: 1em;
+  }
 }
 @media screen and (max-width: 550px) {
   .SkillImage {
@@ -74,14 +88,16 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
+    border-radius: 10px;
     overflow-y: auto;
-    width: 80%;
-    height: 30vh;
+    width: 90%;
+    height: 20vh;
+    margin-bottom: 12em;
   }
   .Skills {
     position: relative;
-    min-height: 100vh;
+    min-height: 60vh;
+    max-height: 70vh;
     width: 100%;
   }
 }

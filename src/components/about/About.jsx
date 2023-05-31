@@ -5,7 +5,7 @@ import RoundedButton from '../assets/roundedButton/RoundedButton';
 import InfiniteScroll from '../assets/infiniteScroll/InfiniteScollAnimation';
 const About = () => {
   return (
-    <div className={classes.About}>
+    <div className={classes.About} id="about">
       <div className={classes.AboutTextContainer}>
         <h1 className={classes.AboutHeading}>About Me</h1>
         <p className={classes.AboutText}>

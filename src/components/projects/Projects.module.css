@@ -1,7 +1,7 @@
 .Project {
   display: flex;
   flex-direction: column;
-  background-color: var(--red) !important;
+
   align-items: center;
   justify-content: center;
   position: relative;

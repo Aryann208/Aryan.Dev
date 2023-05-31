@@ -14,8 +14,11 @@ const Project = [
 ];
 const Projects = () => {
   return (
-    <div className={classes.Project}>
-      <ProjectHolder />
+    <div className={classes.Project} id="project">
+      <ProjectHolder
+        repoLink={'https://github.com/Aryann208/TMDB'}
+        webLink={'https://tmdb-phi.vercel.app/'}
+      />
 
       <ProjectHolder isReverse={true} />
       <ProjectHolder />

@@ -12,6 +12,8 @@ const ProjectHolder = ({
   title = 'Project Title',
   description = text,
   isReverse = false,
+  webLink,
+  repoLink,
 }) => {
   return (
     <>
@@ -42,11 +44,19 @@ const ProjectHolder = ({
         >
           <div>
             {/*       <span className={classes.Heading}>Title </span>*/}
-            <p className={classes.Title}>{title}</p>
+            <p
+              className={isReverse ? `${classes.TitleRev}` : `${classes.Title}`}
+            >
+              {title}
+            </p>
           </div>
           <div className={classes.TechStackContainer}>
-            <NormalButton icon={<BsBrowserChrome />} />
-            <NormalButton icon={<BsGithub />} />
+            <a href={webLink} target="_blank">
+              <NormalButton icon={<BsBrowserChrome />} />
+            </a>
+            <a href={repoLink} target="_blank">
+              <NormalButton icon={<BsGithub />} />
+            </a>
           </div>
           <div className={classes.DescriptionContainer}>
             {/* <span className={classes.Heading}>Description </span>*/}
@@ -72,7 +82,7 @@ const ProjectHolder = ({
         )}
       </div>
       {/* min-height : 850px handler */}
-      <LowResProjectHolder />
+      <LowResProjectHolder isReverse={isReverse} />
     </>
   );
 };
