@@ -20,7 +20,10 @@ const Footer = () => {
               discuss .
             </div>
             <div className={classes.ContainerDiv}>
-              <RoundedButton text="Start a project" />
+              <RoundedButton
+                link="mailto:www.aryantrivedi208@gmail.com"
+                text="Start a project"
+              />
             </div>
           </div>
         </div>
@@ -33,9 +36,18 @@ const Footer = () => {
           </div>
         </div>
         <div className={classes.FooterSocialButtons}>
-          <SocialButtons icon={<FaLinkedinIn />} />
-          <SocialButtons icon={<FaGithub />} />
-          <SocialButtons icon={<AiOutlineMail />} />
+          <SocialButtons
+            icon={<FaLinkedinIn />}
+            link={'https://www.linkedin.com/in/aryan-trivedi-14279a190'}
+          />
+          <SocialButtons
+            icon={<FaGithub />}
+            link={'https://github.com/Aryann208'}
+          />
+          <SocialButtons
+            icon={<AiOutlineMail />}
+            link={'mailto:www.aryantrivedi208@gmail.com'}
+          />
         </div>
         <div className={classes.FooterText}>
           Designed and developed by me &#169; 2023

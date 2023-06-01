@@ -14,6 +14,7 @@ const ProjectHolder = ({
   isReverse = false,
   webLink,
   repoLink,
+  images,
 }) => {
   return (
     <>
@@ -31,11 +32,9 @@ const ProjectHolder = ({
             }
           >
             <div className={classes.ProjectView}>
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
+              {images?.map((img) => (
+                <img className={classes.ProjectImage} src={img} alt="" />
+              ))}
             </div>
           </div>
         )}
@@ -72,17 +71,22 @@ const ProjectHolder = ({
             }
           >
             <div className={classes.ProjectView}>
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
-              <img className={classes.ProjectImage} src={TMDB} alt="" />
+              {images?.map((img) => (
+                <img className={classes.ProjectImage} src={img} alt="" />
+              ))}
             </div>
           </div>
         )}
       </div>
       {/* min-height : 850px handler */}
-      <LowResProjectHolder isReverse={isReverse} />
+      <LowResProjectHolder
+        isReverse={isReverse}
+        title={title}
+        description={description}
+        webLink={webLink}
+        repoLink={repoLink}
+        images={images}
+      />
     </>
   );
 };

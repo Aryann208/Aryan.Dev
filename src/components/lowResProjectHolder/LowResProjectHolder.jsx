@@ -13,6 +13,10 @@ const LowResProjectHolder = ({
   title = 'Project Title',
   description = text,
   isReverse = false,
+
+  webLink,
+  repoLink,
+  images,
 }) => {
   return (
     <div
@@ -21,11 +25,9 @@ const LowResProjectHolder = ({
       }
     >
       <div className={classes.ProjectView}>
-        <img className={classes.ProjectImage} src={TMDB} alt="" />
-        <img className={classes.ProjectImage} src={TMDB} alt="" />
-        <img className={classes.ProjectImage} src={TMDB} alt="" />
-        <img className={classes.ProjectImage} src={TMDB} alt="" />
-        <img className={classes.ProjectImage} src={TMDB} alt="" />
+        {images?.map((img) => (
+          <img className={classes.ProjectImage} src={img} alt="" />
+        ))}
       </div>
       <div className={classes.Details}>
         <div>

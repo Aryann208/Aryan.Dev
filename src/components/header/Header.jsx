@@ -26,16 +26,19 @@ const Header = () => {
                 bgColor="#F8DCC1"
                 textColor="purple"
                 icon={<FaLinkedinIn />}
+                link={'https://www.linkedin.com/in/aryan-trivedi-14279a190'}
               />
               <SocialButtons
                 bgColor="#F8DCC1"
                 textColor="purple"
                 icon={<FaGithub />}
+                link={'https://github.com/Aryann208'}
               />
               <SocialButtons
                 bgColor="#F8DCC1"
                 textColor="purple"
                 icon={<AiOutlineMail />}
+                link={'mailto:www.aryantrivedi208@gmail.com'}
               />
             </div>
           </div>

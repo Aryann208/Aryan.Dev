@@ -45,7 +45,7 @@ function App() {
       <Section />
 
       <About id="about" />
-      <Navbar />
+
       <Projects />
 
       <Skills />

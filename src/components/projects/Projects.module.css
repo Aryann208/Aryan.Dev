@@ -8,3 +8,10 @@
   width: 100%;
   min-height: 400vh;
 }
+
+@media screen and (max-width: 950px) {
+  .Project {
+    
+    min-height: 600vh;
+  }
+}

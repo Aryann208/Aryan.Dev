@@ -5,6 +5,7 @@ const RoundedButton = ({
   borderColor = '#a41c3c',
   textColor = '#a41c3c',
   text = 'Button',
+  link = '',
 }) => {
   const [isHover, setIsHover] = useState(false);
 
@@ -28,7 +29,9 @@ const RoundedButton = ({
           hover: true,
         }}
       >
-        {text}
+        <a href={link} target="_blank">
+          {text}
+        </a>
       </button>
     </div>
   );

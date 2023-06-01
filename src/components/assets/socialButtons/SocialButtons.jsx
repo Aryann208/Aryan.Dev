@@ -3,6 +3,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import classes from './SocialButtons.module.css';
 const SocialButtons = ({
   icon = <FaLinkedinIn />,
+  link = '#',
   textColor = '#fcf951',
   bgColor = '#422057',
 }) => {
@@ -26,7 +27,10 @@ const SocialButtons = ({
         hover: true,
       }}
     >
-      {icon}
+      <a href={link} target="_blank">
+        {' '}
+        {icon}
+      </a>
     </div>
   );
 };

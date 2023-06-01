@@ -27,7 +27,10 @@ const About = () => {
           projects requiring to integrate them .
         </p>
         <div className={classes.Button}>
-          <RoundedButton text="Resume" />
+          <RoundedButton
+            text="Resume"
+            link="https://drive.google.com/file/d/1tCyGYsDEpQWvjExFefuUoXvB_6tIyOl9/view?usp=drive_link"
+          />
         </div>
       </div>
     </div>
