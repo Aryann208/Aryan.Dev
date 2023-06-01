@@ -21,7 +21,7 @@ const LowResProjectHolder = ({
   return (
     <div
       className={
-        isReverse ? `${classes.ProjectHolderRev}` : `${classes.ProjectHolder}`
+        isReverse ? `${classes.ProjectHolder}` : `${classes.ProjectHolder}`
       }
     >
       <div className={classes.ProjectView}>

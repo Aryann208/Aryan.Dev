@@ -72,7 +72,11 @@ const ProjectHolder = ({
           >
             <div className={classes.ProjectView}>
               {images?.map((img) => (
-                <img className={classes.ProjectImage} src={img} alt="" />
+                <img
+                  className={classes.ProjectImage}
+                  src={img}
+                  alt="Project Images"
+                />
               ))}
             </div>
           </div>
