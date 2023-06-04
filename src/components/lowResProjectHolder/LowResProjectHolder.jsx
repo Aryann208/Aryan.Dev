@@ -37,8 +37,12 @@ const LowResProjectHolder = ({
         <div className={classes.DescriptionContainer}>
           <p className={classes.RegularText}>{description}</p>
           <div className={classes.TechStackContainer}>
-            <NormalButton icon={<BsBrowserChrome />} />
-            <NormalButton icon={<BsGithub />} />
+            <a href={webLink} target="_blank">
+              <NormalButton icon={<BsBrowserChrome />} />
+            </a>
+            <a href={repoLink} target="_blank">
+              <NormalButton icon={<BsGithub />} />
+            </a>
           </div>
         </div>
       </div>

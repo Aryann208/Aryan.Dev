@@ -43,6 +43,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+
         <div className={classes.RightSection}>
           <InfiniteScroll />
         </div>
