@@ -29,7 +29,7 @@ const About = () => {
         <div className={classes.Button}>
           <RoundedButton
             text="Resume"
-            link="https://drive.google.com/file/d/1tCyGYsDEpQWvjExFefuUoXvB_6tIyOl9/view?usp=drive_link"
+            link="https://docs.google.com/document/d/1MgFhlKDR2KMYGW1w8CRpUPYW7R83XFry/edit?usp=sharing&ouid=109404726416797402598&rtpof=true&sd=true"
           />
         </div>
       </div>
