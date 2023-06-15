@@ -1,5 +1,239 @@
-.ProjectContainer {
-  background-color: #f4f4f4 !important;
-  min-height: 100vh;
+:root {
+  --notRev: #a41c3c;
+  --Rev: white;
+}
+.ProjectHolder {
+  display: grid;
+  position: relative;
+  grid-template-columns: 45% 55%;
+  place-content: center;
   width: 100%;
+  min-height: 100vh;
+  border-bottom: 1px var(--skin) solid;
+  color: white;
+  background-color: var(--notRev);
+  /* border: 11px orange solid; */
+}
+
+.Details {
+  /* display: grid;
+overflow: hidden;
+  grid-template-rows: 20% 20% 60%; */
+  display: flex;
+  flex-direction: column;
+  color: #f4f4f4;
+  justify-content: space-evenly;
+  padding: 3em 2em;
+  margin: 3em 2em;
+  text-align: left;
+
+  /* background-color: white; */
+  /* border-radius: 0 40px 0 40px;
+  border-radius: 1px0; */
+  min-width: 70%;
+  max-width: 80%;
+
+  min-height: 70vh;
+
+  margin: auto;
+}
+.Title {
+  font-size: 3em;
+  height: 100%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+
+  font-weight: bold;
+  font-family: Cabinet;
+  color: var(--skin);
+}
+
+.SkillContainer {
+  margin: 2em 0;
+}
+.Skill {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1.3em;
+  padding: 0.6em 1em;
+  margin: 0.3em 0;
+  margin-right: 0.5em;
+  border-radius: 2rem;
+  min-width: 5em;
+  background-color: var(--skin);
+  color: #a41c3c;
+  font-weight: 800;
+  border: 1px solid var(--skin);
+}
+.SkillRev {
+  display: inline-flex;
+  justify-content: center;
+  font-size: 1.3em;
+  padding: 0.6em 1em;
+  margin: 0.3em 0;
+  margin-right: 0.5em;
+  border-radius: 2rem;
+  min-width: 5em;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 800;
+  border: 1px solid var(--skin);
+}
+.DescriptionContainer {
+  /* border: 10px solid black; */
+  overflow-y: auto;
+  min-height: 40vh;
+
+  position: relative;
+
+  /* border: yellow solid 1px; */
+}
+
+.RegularText {
+  margin: 0.6em 0;
+  line-height: 150%;
+  color: inherit;
+  font-family: Cabinet;
+  font-size: 1.8em;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.TechStackContainer {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+.ProjectViewContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: white;
+  margin: 5em auto;
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 3.5em 0 0 3.5em;
+  padding: 3em 0;
+  padding-right: 2em;
+
+  background: #ffffff;
+  box-shadow: inset 34px 34px 68px #d6d6d6, inset -34px -34px 68px #ffffff;
+}
+.ProjectView {
+  position: relative;
+  min-height: 70vh;
+  max-height: 70vh;
+  max-width: 90%;
+
+  /* display: grid;
+  place-content: center;
+  grid-auto-flow: column;
+  grid-auto-columns: 95%; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: auto;
+  background-color: white !important;
+  background: rgba(255, 241, 228, 0.945);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: black 10px solid;
+}
+
+.ProjectImage {
+  width: 90%;
+  padding: 0 2em;
+}
+
+/* /////REVERSE DECK */
+
+.ProjectHolderRev {
+  display: grid;
+  position: relative;
+  grid-template-columns: 55% 45%;
+  place-content: center;
+  width: 100%;
+  min-height: 100vh;
+  border-bottom: 1px var(--skin) solid;
+  color: white;
+  background-color: var(--Rev);
+  background-color: #f4f4f4;
+  /* border: 11px orange solid; */
+}
+
+.DetailsRev {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+  padding: 3em 2em;
+  margin: 3em 2em;
+  text-align: left;
+  /* display: flex;
+  flex-direction: column;
+
+  justify-content: space-between; */
+
+  color: var(--primary) !important;
+  background-color: white;
+  background-color: white;
+  /* border-radius: 40px 0 40px 0; */
+  /* border-radius: 0; */
+  min-width: 70%;
+  max-width: 80%;
+
+  min-height: 70vh;
+
+  margin: auto;
+}
+
+.ProjectViewContainerRev {
+  position: relative;
+  display: flex;
+
+  justify-content: flex-start;
+
+  background-color: var(--notRev);
+  margin: 0 auto;
+  width: 100%;
+  max-height: 90vh;
+  border-radius: 0 3.5em 3.5em 0;
+  padding: 3em 0;
+  padding-left: 2em;
+
+  background: #ffffff;
+  box-shadow: inset -34px 34px 68px #d6d6d6, inset 34px -34px 68px #ffffff;
+}
+.TitleRev {
+  font-size: 3em;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  font-weight: bold;
+  font-family: Cabinet;
+  color: black;
+}
+.TechStackContainer > a {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .ProjectHolder {
+    display: none;
+  }
+  .ProjectHolderRev {
+    display: none;
+  }
 }

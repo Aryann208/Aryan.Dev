@@ -23,6 +23,15 @@ const ProjectJSON = [
     title: 'TMDB : Movie & TV Shows Database',
     description:
       'TMDB is a React JS web app that uses a Restful public API to provide movie and TV show information. With Redux for state management and Vercel for deployment, TMDB offers an immersive platform to explore release dates, cast details, descriptions, ratings, and trailers.',
+    tech: [
+      'React JS',
+      'RESTful API',
+      'Redux',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Vercel',
+    ],
     webLink: 'https://tmdb-phi.vercel.app/',
     repoLink: 'https://github.com/Aryann208/TMDB',
     images: [tmdb1, tmdb2, tmdb3, tmdb4],
@@ -31,6 +40,15 @@ const ProjectJSON = [
     title: 'Delicious : Cuisine and Recipes Database',
     description:
       'Delicious is a React JS project that offers a diverse collection of global cuisines. With detailed information about categories, origins, ingredients, and instructions, users can explore and create a variety of dishes. Styled Components add visual appeal to the website. Discover culinary delights with Delicious and satisfy your taste for international flavors.',
+    tech: [
+      'React JS',
+      'RESTful API',
+      'Styled Components',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Vercel',
+    ],
     webLink: 'https://react-recipes-mauve.vercel.app/',
     repoLink: 'https://github.com/Aryann208/React-Recipes',
     images: [deli1, deli2],
@@ -39,14 +57,24 @@ const ProjectJSON = [
     title: 'Metaverse ',
     description:
       'MetaVerse is a captivating React JS web app that combines stunning animations with high-fidelity design. Powered by Framer Motion, the app offers a seamless and visually appealing user experience. Deployed on Vercel .',
+    tech: ['React JS', 'Framer', 'HTML5', 'CSS3', 'Javascript', 'Vercel'],
     webLink: 'https://metaverse-p92w.vercel.app/',
     repoLink: 'https://github.com/Aryann208/Metaverse',
     images: [metaverse1, metaverse2],
   },
   {
-    title: 'CRWN-CLothing',
+    title: 'CRWN-CLOTHING',
     description:
-      'CRWN CLOTHING: Explore, Shop, Express. Discover a stylish React JS web app with seamless cart management and efficient state synchronization. Deployed with Vercel for optimal performance and scalability. Unleash your unique style with CRWN CLOTHING.',
+      ' Explore, Shop, Express. Discover a stylish React JS web app with seamless cart management and efficient state synchronization. Deployed with Vercel for optimal performance and scalability. Unleash your unique style with CRWN CLOTHING.',
+    tech: [
+      'React JS',
+      'RESTful API',
+      'React Context',
+      'HTML5',
+      'CSS3',
+      'Javascript',
+      'Vercel',
+    ],
     webLink: 'https://crwn-clothing-jet.vercel.app/',
     repoLink: 'https://github.com/Aryann208/Crwn-clothing',
     images: [crwn1, crwn2, crwn3],
@@ -62,14 +90,16 @@ const ProjectJSON = [
 const Projects = () => {
   return (
     <div className={classes.Project} id="project">
+      <div className={classes.Heading}>Projects</div>
       {ProjectJSON.map((project, idx) => (
-        <ProjectHolder
+        <ProjectHolderV2
           isReverse={idx % 2 === 0}
           title={project.title}
           description={project.description}
           webLink={project.webLink}
           repoLink={project.repoLink}
           images={project.images}
+          tech={project.tech}
         />
       ))}
     </div>

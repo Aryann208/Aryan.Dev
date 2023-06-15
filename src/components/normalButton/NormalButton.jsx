@@ -5,6 +5,7 @@ const NormalButton = ({
   icon = <FaLinkedinIn />,
   textColor = '#a41c3c',
   bgColor = '#f8dcc1',
+  width = '100%',
 }) => {
   const [isHover, setIsHover] = useState(false);
   const handleMouseEnter = () => {
@@ -21,7 +22,7 @@ const NormalButton = ({
       style={{
         backgroundColor: isHover ? textColor : bgColor,
         color: isHover ? bgColor : textColor,
-
+        width: width,
         borderColor: isHover ? bgColor : textColor,
         hover: true,
       }}

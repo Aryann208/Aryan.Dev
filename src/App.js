@@ -9,6 +9,7 @@ import About from './components/about/About';
 import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
 import Navbar from './components/navbar/Navbar';
+import AboutV2 from './components/aboutV2/AboutV2';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -43,8 +44,7 @@ function App() {
 
       <Header />
       <Section />
-
-      <About id="about" />
+      <AboutV2 />
 
       <Projects />
 

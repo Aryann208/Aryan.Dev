@@ -8,11 +8,23 @@
   align-items: center;
   /* background-color: #4d4dff; */
   background-color: var(--primary);
-  background-color: var(--skin);
+  background-color: #f4f4f4;
+}
+.Heading {
+  display: flex;
+  justify-content: flex-start;
+  font-family: Cabinet Bold;
+  padding: 0 5%;
+  font-size: 6em;
+  text-align: left;
+  height: 10vh;
+  width: 100%;
+  color: black;
+  /* border: 1px solid var(--primary); */
 }
 
-.Heading {
-  background-color: var(--red) !important;
+/* .Heading {
+  background-color: var(--primary) !important;
   font-size: 3.5em;
   height: auto;
   width: 80%;
@@ -23,15 +35,16 @@
   margin-bottom: 1em;
   border-radius: 20px;
   padding: 1em;
-}
+} */
 .SkillsContainer {
   position: relative;
   display: grid;
   place-content: center;
   grid-template-columns: repeat(5, 1fr);
-  width: 80%;
+  width: 90%;
   height: 60vh;
-  padding: 2% 2%;
+  padding: 2% 0%;
+  margin: 2% auto;
   gap: 5%;
   /* background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -63,7 +76,8 @@
     padding: 2% 3%;
     gap: 20% 7%;
   }
-  .Heading {
+
+  /* .Heading {
     background-color: var(--primary);
     font-size: 3.5em;
     height: auto;
@@ -75,7 +89,7 @@
     margin-bottom: 1em;
     border-radius: 20px;
     padding: 1em;
-  }
+  } */
 }
 @media screen and (max-width: 550px) {
   .SkillImage {

@@ -6,12 +6,31 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  min-height: 400vh;
+  max-height: 420vh;
+}
+.Heading {
+  /* border: #333333 solid 1px; */
+  display: flex;
+  align-items: flex-end;
+  padding: 0 5%;
+  font-family: Cabinet Bold;
+  background-color: #f4f4f4;
+  max-height: 20vh;
+  color: black;
+  font-size: 7em;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+
+  border: 10px #f4f4f4 solid;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 750px) {
   .Project {
-    
-    min-height: 600vh;
+    min-height: 440vh;
+  }
+
+  .Heading {
+    font-size: 7em;
   }
 }

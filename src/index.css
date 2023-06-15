@@ -60,6 +60,16 @@ div {
   src: url('./components/assets/fonts/aqua.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Cabinet';
+  src: url('./components/assets/fonts/CabinetGrotesk-Regular.otf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'Cabinet Bold';
+  src: url('./components/assets/fonts/CabinetGrotesk-Bold.otf')
+    format('truetype');
+}
+@font-face {
   font-family: 'Quentin';
   src: url('./components/assets/fonts/NirtieryQuentin-jEMPv.otf')
     format('truetype');

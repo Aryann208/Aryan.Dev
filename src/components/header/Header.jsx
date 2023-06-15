@@ -11,13 +11,17 @@ const Header = () => {
       <div className={classes.Header} id="header">
         <div className={classes.LeftSection}>
           <div className={classes.RegularText}>
-            <span className={`${classes.Heading} ${classes.EnhancedText}`}>
+            <h2 className={`${classes.Heading} ${classes.EnhancedText}`}>
               Aryan Trivedi
-            </span>
+            </h2>
+            {/*            <p style={{ textAlign: 'left' }}>
+              Elevating User Experiences through Powerful Frontend Development
+              with React.js and Next.js
+  </p> */}
 
             <p className={`${classes.Heading2} ${classes.EnhancedText}`}>
-              <span className={classes.QuotationText}>{`</`}</span>frontend
-              developer<span className={classes.QuotationText}>{`>`}</span>
+              <span className={classes.QuotationText}>{`</ `}</span>frontend
+              developer<span className={classes.QuotationText}>{` >`}</span>
             </p>
           </div>
           <div className={classes.TechStack}>

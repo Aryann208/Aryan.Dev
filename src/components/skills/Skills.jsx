@@ -18,7 +18,7 @@ import Mongologo from '../assets/images/mongo.jpg';
 const Skills = () => {
   return (
     <div className={classes.Skills}>
-      <div className={classes.Heading}>Skills & Tech Stack</div>
+      <div className={classes.Heading}>Skills & Tools</div>
       <div className={classes.SkillsContainer}>
         <div className={classes.SkillImage}>
           <img src={Html} alt="" className={classes.SkillImage}></img>
