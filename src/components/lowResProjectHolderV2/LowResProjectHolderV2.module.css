@@ -46,8 +46,9 @@
   }
   .Heading {
     font-size: 3em;
-    font-weight: 300;
-    min-height: 12%;
+    font-weight: 600;
+    min-height: 10%;
+    max-height: 12%;
     /* border: 2px solid black; */
   }
   .Description {
@@ -130,5 +131,10 @@
 @media screen and (max-width: 450px) {
   .Image {
     max-height: 25%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .SkillContainer {
+    display: none;
   }
 }
