@@ -33,11 +33,23 @@ const LowResProjectHolderV2 = ({
         </div>
         <div className={classes.btnContainer}>
           <a target="_blank" href={repoLink}>
-            <button className={classes.btn}>Github</button>
+            <button className={classes.btn}>
+              <span className={classes.btnContent}>
+                {' '}
+                <BsGithub className={classes.Icon} />
+                <span className={classes.btnTitle}>Github</span>
+              </span>
+            </button>
           </a>
 
           <a target="_blank" href={webLink}>
-            <button className={classes.btn}>Go Live</button>
+            <button className={classes.btn}>
+              <span className={classes.btnContent}>
+                {' '}
+                <BsBrowserChrome className={classes.Icon} />
+                <span className={classes.btnTitle}> Live</span>
+              </span>
+            </button>
           </a>
         </div>
       </div>

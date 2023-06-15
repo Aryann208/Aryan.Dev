@@ -1,4 +1,6 @@
 import React from 'react';
+import { AiFillMail } from 'react-icons/ai';
+import { BsFiletypeDocx } from 'react-icons/bs';
 import classes from './AboutV2.module.css';
 const AboutV2 = () => {
   return (
@@ -20,10 +22,18 @@ const AboutV2 = () => {
               target="_blank"
               href="https://drive.google.com/file/d/15i3QxQKx-H-X3rTQqOrJDOma1o7WB1P9/view?usp=drive_link"
             >
-              <button className={classes.btn}>Resume</button>
+              <button className={classes.btn}>
+                <BsFiletypeDocx className={classes.Icon}  />
+
+                <span className={classes.btnTitle}>Resume</span>
+              </button>
             </a>
             <a className={classes.a} href="#footer">
-              <button className={classes.btn}>Contact</button>
+              <button className={classes.btn}>
+                {' '}
+                <AiFillMail className={classes.Icon} />
+                <span className={classes.btnTitle}>Contact</span>
+              </button>
             </a>
           </div>
         </p>
