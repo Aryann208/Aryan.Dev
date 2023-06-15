@@ -42,7 +42,7 @@
   place-content: center;
   grid-template-columns: repeat(5, 1fr);
   width: 90%;
-  height: 60vh;
+  height: 70vh;
   padding: 2% 0%;
   margin: 2% auto;
   gap: 5%;
@@ -55,8 +55,6 @@
 
   border-radius: 50px;
   background: #ffffff;
-  box-shadow: inset 35px 35px 70px #ededed, inset -35px -35px 70px #ffffff;
-  border: 3px solid rgba(255, 255, 255, 0.18);
 }
 
 .SkillImage {

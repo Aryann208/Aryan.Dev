@@ -11,10 +11,10 @@ import Tailwindlogo from '../assets/images/Tailwind_CSS_Logo.svg';
 import MUIlogo from '../assets/images/Material-ui-01.svg';
 import Nodelogo from '../assets/images/Node-JS-02.svg';
 import Pythonlogo from '../assets/images/Python-04.svg';
-import Expresslogo from '../assets/images/expressjs-ar21.png';
+import Expresslogo from '../assets/images/express.svg';
 import Framerlogo from '../assets/images/Framer-01.svg';
-import Githublogo from '../assets/images/Github_logo_PNG1.png';
-import Mongologo from '../assets/images/mongo.jpg';
+import Githublogo from '../assets/images/github.svg';
+import Mongologo from '../assets/images/mongodb.svg';
 const Skills = () => {
   return (
     <div className={classes.Skills}>
