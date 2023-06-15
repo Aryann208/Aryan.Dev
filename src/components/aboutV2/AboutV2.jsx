@@ -6,7 +6,7 @@ const AboutV2 = () => {
       <div className={classes.Title}>About </div>
       <div className={classes.Description}>
         <p>
-          {`Aryan is a skilled frontend developer specializing in React JS and Next JS. With over 3 years of experience, he has honed his web development skills and gained expertise in React JS. Aryan has also worked extensively with animation libraries such as Framer Motion, React Spring, and GSAP. `}
+          {`Aryan is a skilled frontend developer specializing in React JS and Next JS. He has honed his web development skills and gained expertise in React JS. Aryan has also worked extensively with animation libraries such as Framer Motion, React Spring, and GSAP. `}
           <br />
           <br />
           {`He holds a Bachelor of Technology degree from Kalinga Institute of Industrial Technology, where he received a solid foundation in computer science engineering. As a Computer Science Engineer, Aryan is well-versed in languages such as C, C++, Python, JavaScript, as well as frameworks like Node.js and Express.js. He is capable of integrating these technologies into projects as required.`}
