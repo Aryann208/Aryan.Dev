@@ -1,33 +1,96 @@
-.Navbar {
-  position: relative;
-  height: 6vh;
-  width: 100%;
-  background: rgba(66, 32, 87, 1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  position: fixed;
-  z-index: 1000;
-
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--primary);
+  color: white;
+  border-bottom: 1px solid #ffffff20;
+  padding: 0 clamp(20px, 5vw, 80px);
+}
+.nav {
+  min-height: 84px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
+  gap: 25px;
 }
-
-.NavbarImage {
+.brand {
   display: flex;
   align-items: center;
-  justify-content: center;
-  /* border: 2px white solid; */
-  width: 4em;
-  height: 4em;
-  margin: 0 2em;
-  cursor: pointer;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  min-height: 48px;
 }
-
-.MenuLogo {
-  font-size: 4em;
+.brand img {
+  width: 32px;
+  height: 32px;
+}
+.dot {
+  color: var(--skin);
+  margin-left: 3px;
+}
+.links {
+  display: flex;
+  gap: clamp(16px, 2.4vw, 34px);
+  align-items: center;
+  font-size: 0.95rem;
+}
+.links a {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.links a:hover {
+  color: var(--skin);
+}
+.links .contact {
+  border: 1px solid #f8dcc180;
+  border-radius: 100px;
+  padding: 8px 18px;
+  gap: 18px;
+}
+.toggle {
+  display: none;
+}
+.header :focus-visible {
+  outline-color: var(--skin);
+}
+@media (max-width: 850px) {
+  .nav {
+    min-height: 72px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .toggle {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    background: transparent;
+    color: white;
+    border: 1px solid #ffffff60;
+    border-radius: 100px;
+    padding: 8px 16px;
+    min-height: 44px;
+    font-size: 0.95rem;
+  }
+  .links {
+    display: none;
+    width: 100%;
+    padding: 12px 0 24px;
+    gap: 4px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .links.open {
+    display: grid;
+  }
+  .links a {
+    padding: 8px 12px;
+  }
+  .links .contact {
+    justify-content: space-between;
+    padding-inline: 12px;
+  }
 }

@@ -1,0 +1,75 @@
+{
+  "base": "http://localhost:3001",
+  "viewports": [
+    {
+      "width": 320,
+      "scrollWidth": 320,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 360,
+      "scrollWidth": 360,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 375,
+      "scrollWidth": 375,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 430,
+      "scrollWidth": 430,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 768,
+      "scrollWidth": 768,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 1024,
+      "scrollWidth": 1024,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    },
+    {
+      "width": 1440,
+      "scrollWidth": 1440,
+      "imagesLoaded": 12,
+      "navigation": "pass",
+      "caseStudies": "pass"
+    }
+  ],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "resume": {
+    "status": 200,
+    "mime": "application/pdf",
+    "downloadFilename": "Aryan-Trivedi-Resume.pdf",
+    "sha256": "dad93234d7380dfa45b517efacbb90b1462d97634b61a68b94c7cce587db3bb7",
+    "links": 5
+  },
+  "keyboardSkipLink": "pass",
+  "reducedMotion": "pass",
+  "motionPauseResume": "pass",
+  "expandedCaseStudies320": "pass",
+  "status": "passed"
+}

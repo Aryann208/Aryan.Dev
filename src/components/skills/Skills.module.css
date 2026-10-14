@@ -1,118 +1,92 @@
 .Skills {
-  position: relative;
-  min-height: 120vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* background-color: #4d4dff; */
-  background-color: var(--primary);
-  background-color: #f4f4f4;
+  padding: clamp(64px, 8vw, 120px) clamp(20px, 5vw, 80px);
+  background: var(--paper);
+  color: var(--primary);
 }
-.Heading {
+.Header {
   display: flex;
-  justify-content: flex-start;
-  font-family: Cabinet Bold;
-  padding: 0 5%;
-  font-size: 6em;
-  text-align: left;
-  height: 10vh;
-  width: 100%;
-  color: black;
-  /* border: 1px solid var(--primary); */
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 52px;
 }
-
-/* .Heading {
-  background-color: var(--primary) !important;
-  font-size: 3.5em;
-  height: auto;
-  width: 80%;
-  position: relative;
-  font-weight: bold;
-  font-family: Lato;
-  color: white;
-  margin-bottom: 1em;
-  border-radius: 20px;
-  padding: 1em;
-} */
-.SkillsContainer {
-  position: relative;
+.Header h2 {
+  margin-top: 20px;
+}
+.Header > p {
+  max-width: 300px;
+  color: #5c5262;
+}
+.Group {
   display: grid;
-  place-content: center;
-  grid-template-columns: repeat(5, 1fr);
-  width: 90%;
-  height: 70vh;
-  padding: 2% 0%;
-  margin: 2% auto;
-  gap: 5%;
-  /* background: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.18); */
-
-  border-radius: 50px;
-  background: #ffffff;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(24px, 7vw, 100px);
+  border-top: 1px solid rgb(66 32 87 / 22%);
+  padding: 28px 0;
 }
-
-.SkillImage {
-  position: relative;
-  width: 8em !important;
-  height: 8em !important;
-  margin: 1em;
+.Group:last-child {
+  padding-bottom: 0;
 }
-
-@media screen and (max-width: 850px) {
-  .SkillImage {
-    position: relative;
-    width: 7em !important;
-    height: 7em !important;
-  }
-  .Heading {
-    margin-bottom: 1em;
-  }
-  .SkillsContainer {
-    padding: 2% 3%;
-    gap: 20% 7%;
-  }
-
-  /* .Heading {
-    background-color: var(--primary);
-    font-size: 3.5em;
-    height: auto;
-    width: 80%;
-    position: relative;
-    font-weight: bold;
-    font-family: Lato;
-    color: white;
-    margin-bottom: 1em;
-    border-radius: 20px;
-    padding: 1em;
-  } */
+.Group h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  line-height: 1.4;
+  display: flex;
+  gap: 18px;
 }
-@media screen and (max-width: 550px) {
-  .SkillImage {
-    position: relative;
-    width: 12em !important;
-    height: 12em !important;
-    padding: 0 1em;
+.Group h3 span {
+  font-size: 0.78rem;
+  font-weight: 400;
+  line-height: 2.6;
+  color: #6f6275;
+}
+.List {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 0;
+  margin: 0;
+}
+.List li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #45384d;
+}
+.List img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+@media (hover: hover) {
+  .List li:hover img {
+    transform: translateY(-3px) rotate(-5deg);
   }
-  .SkillsContainer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 10px;
-    overflow-y: auto;
-    width: 90%;
-    height: 20vh;
-    margin-bottom: 12em;
+}
+@media (max-width: 800px) {
+  .Header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 36px;
   }
-  .Skills {
-    position: relative;
-    min-height: 60vh;
-    max-height: 70vh;
-    width: 100%;
+  .Header > p {
+    max-width: 500px;
+  }
+  .Group {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .List {
+    gap: 10px 18px;
+  }
+  .List li {
+    font-size: 1rem;
   }
 }

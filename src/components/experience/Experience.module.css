@@ -1,0 +1,100 @@
+.Experience {
+  padding: clamp(64px, 8vw, 120px) clamp(20px, 5vw, 80px);
+  background: var(--skin);
+  color: var(--primary);
+}
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+.Header h2 {
+  margin-top: 20px;
+}
+.HeaderNote {
+  max-width: 300px;
+  font-size: 1.1rem;
+}
+.Role {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(32px, 7vw, 100px);
+  border-top: 1px solid rgb(66 32 87 / 30%);
+  padding-top: 36px;
+}
+.Role + .Role {
+  margin-top: 56px;
+}
+.Number {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.RoleMeta h3 {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  letter-spacing: -0.035em;
+}
+.RoleTitle {
+  margin-top: 12px;
+  max-width: 320px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.Dates {
+  font-size: 0.95rem;
+  margin-top: 10px;
+  color: #644d69;
+}
+.Summary {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.Achievements {
+  padding-left: 20px;
+  margin: 24px 0 0;
+  color: #453348;
+}
+.Achievements li {
+  padding-left: 5px;
+}
+.Achievements li + li {
+  margin-top: 12px;
+}
+.Technologies {
+  list-style: none;
+  padding: 0;
+  margin: 28px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.Technologies li {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  font-weight: 700;
+  padding: 5px 10px;
+  border: 1px solid rgb(66 32 87 / 30%);
+  border-radius: 4px;
+}
+@media (max-width: 800px) {
+  .Header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  .HeaderNote {
+    max-width: 520px;
+  }
+  .Role {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+  .RoleTitle {
+    max-width: none;
+  }
+}

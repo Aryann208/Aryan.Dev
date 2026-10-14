@@ -1,18 +1,1 @@
-.App {
-  text-align: center;
-  font-family: Merriweather;
-  box-sizing: border-box;
-  background-color: var(--primary);
-}
-
-.progress-bar {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--skin);
-  background: var(--red);
-  transform-origin: 0%;
-}
+/* Shared design tokens, typography and controls live in index.css. */

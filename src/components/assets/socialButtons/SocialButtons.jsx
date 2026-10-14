@@ -27,7 +27,7 @@ const SocialButtons = ({
         hover: true,
       }}
     >
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" rel="noopener noreferrer">
         {' '}
         {icon}
       </a>

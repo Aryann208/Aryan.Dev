@@ -3,7 +3,6 @@ import classes from './ProjectHolderV2.module.css';
 import LowResProjectHolderV2 from '../lowResProjectHolderV2/LowResProjectHolderV2';
 import NormalButton from '../normalButton/NormalButton';
 import { BsBrowserChrome, BsGithub } from 'react-icons/bs';
-import { AiFillGithub } from 'react-icons/ai';
 const text =
   'Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing';
 const ProjectHolderV2 = ({
@@ -69,10 +68,10 @@ const ProjectHolderV2 = ({
 
           {!isReverse && (
             <div className={classes.TechStackContainer}>
-              <a href={webLink} target="_blank">
+              <a href={webLink} target="_blank" rel="noopener noreferrer">
                 <NormalButton icon={<BsBrowserChrome />} width="80%" />
               </a>
-              <a href={repoLink} target="_blank">
+              <a href={repoLink} target="_blank" rel="noopener noreferrer">
                 <NormalButton icon={<BsGithub />} width="80%" />
               </a>
             </div>
@@ -80,7 +79,7 @@ const ProjectHolderV2 = ({
 
           {isReverse && (
             <div className={classes.TechStackContainer}>
-              <a href={webLink} target="_blank">
+              <a href={webLink} target="_blank" rel="noopener noreferrer">
                 <NormalButton
                   icon={<BsBrowserChrome />}
                   width="80%"
@@ -88,7 +87,7 @@ const ProjectHolderV2 = ({
                   bgColor="white"
                 />
               </a>
-              <a href={repoLink} target="_blank">
+              <a href={repoLink} target="_blank" rel="noopener noreferrer">
                 <NormalButton
                   icon={<BsGithub />}
                   width="80%"

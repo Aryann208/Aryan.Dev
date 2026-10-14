@@ -1,60 +1,81 @@
-import React from 'react';
-import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { profile } from '../../data/profile';
+import ResumeLink from '../resume/ResumeLink';
 import Logo from '../assets/images/whiteLogo.svg';
 import classes from './Footer.module.css';
-import SocialButtons from '../assets/socialButtons/SocialButtons';
-import RoundedButton from '../assets/roundedButton/RoundedButton';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <div className={classes.Footer} id="footer">
-      <div className={classes.FooterTextContainer}>
-        <div className={classes.ContactContainer}>
-          <div className={classes.ContactContainerText}>
-            <div className={`${classes.Heading2} ${classes.ContainerDiv}`}>
-              Have a project ?
-            </div>
-            <div className={`${classes.Subheading2} ${classes.ContainerDiv}`}>
-              Have an idea to develop into a website? {`Let's`} connect and
-              discuss .
-            </div>
-            <div className={classes.ContainerDiv}>
-              <RoundedButton
-                link="mailto:www.aryantrivedi208@gmail.com"
-                text="Start a project"
+    <footer
+      id="contact"
+      className={classes.Footer}
+      aria-labelledby="contact-heading"
+    >
+      <div className="section-shell">
+        <div className={classes.Topline}>
+          <p className="eyebrow">Have something in mind?</p>
+          <a
+            href="#home"
+            aria-label="Aryan Trivedi, back to top"
+            className={classes.Logo}
+          >
+            <img src={Logo} width="62" height="45" alt="" loading="lazy" />
+          </a>
+        </div>
+        <div className={classes.Contact}>
+          <h2 id="contact-heading">
+            Let’s talk
+            <br />
+            <span>engineering.</span>
+          </h2>
+          <div className={classes.ContactBody}>
+            <p>
+              I’m interested in full-stack engineering roles where I can own
+              meaningful product work, solve difficult problems, and build with
+              a thoughtful team.
+            </p>
+            <a className={classes.Email} href={`mailto:${profile.email}`}>
+              {profile.email}
+              <span aria-hidden="true">↗</span>
+            </a>
+            <div className={classes.Actions}>
+              <a
+                className="button button-primary"
+                href={`mailto:${profile.email}`}
+              >
+                Get in touch <span aria-hidden="true">↗</span>
+              </a>
+              <ResumeLink
+                className={`button button-outline ${classes.Resume}`}
               />
             </div>
           </div>
         </div>
-        <div className={classes.FooterLogo}>
-          <div className={classes.Logo}>
-            <img src={Logo} alt="" />
-          </div>
-          <div className={classes.Subheading}>
-            <p>Living, learning, & leveling up one day at a time.</p>
-          </div>
-        </div>
-        <div className={classes.FooterSocialButtons}>
-          <SocialButtons
-            icon={<FaLinkedinIn />}
-            link={'https://www.linkedin.com/in/aryan-trivedi-14279a190'}
-          />
-          <SocialButtons
-            icon={<FaGithub />}
-            link={'https://github.com/Aryann208'}
-          />
-          <SocialButtons
-            icon={<AiOutlineMail />}
-            link={'mailto:www.aryantrivedi208@gmail.com'}
-          />
-        </div>
-        <div className={classes.FooterText}>
-          Designed and developed by me &#169; 2023
+        <nav className={classes.Links} aria-label="Contact and social links">
+          <a href={profile.linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn aria-hidden="true" /> LinkedIn{' '}
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href={profile.github} target="_blank" rel="noopener noreferrer">
+            <FaGithub aria-hidden="true" /> GitHub{' '}
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a
+            href={profile.macrointel}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Explore MacroIntel <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
+        <div className={classes.Bottomline}>
+          <p>© {new Date().getFullYear()} Aryan Trivedi</p>
+          <p>Designed & built with care.</p>
+          <a href="#home">
+            Back to top <span aria-hidden="true">↑</span>
+          </a>
         </div>
       </div>
-    </div>
+    </footer>
   );
-};
-
-export default Footer;
+}

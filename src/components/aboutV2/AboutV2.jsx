@@ -1,45 +1,67 @@
-import React from 'react';
-import { AiFillMail } from 'react-icons/ai';
-import { BsFiletypeDocx } from 'react-icons/bs';
+import ResumeLink from '../resume/ResumeLink';
 import classes from './AboutV2.module.css';
-const AboutV2 = () => {
+
+const highlights = [
+  ['~3 years', 'of professional experience'],
+  ['10+ clients', 'enterprise authentication deliveries'],
+  ['6–8 people', 'cross-functional team leadership'],
+];
+
+export default function AboutV2() {
   return (
-    <div className={classes.AboutContainer}>
-      <div className={classes.Title}>About </div>
-      <div className={classes.Description}>
-        <p>
-          {`Aryan is a skilled frontend developer specializing in React JS and Next JS. He has honed his web development skills and gained expertise in React JS. Aryan has also worked extensively with animation libraries such as Framer Motion, React Spring, and GSAP. `}
-          <br />
-          <br />
-          {`He holds a Bachelor of Technology degree from Kalinga Institute of Industrial Technology, where he received a solid foundation in computer science engineering. As a Computer Science Engineer, Aryan is well-versed in languages such as C, C++, Python, JavaScript, as well as frameworks like Node.js and Express.js. He is capable of integrating these technologies into projects as required.`}
-          <br />
-          <br />
-
-          {`If you have any inquiries or need assistance, feel free to contact Aryan. He is dedicated to providing help and support in frontend development.`}
-          <div className={classes.btnContainer}>
-            <a
-              className={classes.a}
-              target="_blank"
-              href="https://drive.google.com/file/d/15i3QxQKx-H-X3rTQqOrJDOma1o7WB1P9/view?usp=drive_link"
+    <section
+      id="about"
+      className={classes.About}
+      aria-labelledby="about-heading"
+    >
+      <div className="section-shell">
+        <div className={classes.Intro}>
+          <div>
+            <p className="eyebrow">A little about me</p>
+            <h2
+              id="about-heading"
+              className={`section-heading ${classes.Heading}`}
             >
-              <button className={classes.btn}>
-                <BsFiletypeDocx className={classes.Icon}  />
-
-                <span className={classes.btnTitle}>Resume</span>
-              </button>
-            </a>
-            <a className={classes.a} href="#footer">
-              <button className={classes.btn}>
-                {' '}
-                <AiFillMail className={classes.Icon} />
-                <span className={classes.btnTitle}>Contact</span>
-              </button>
-            </a>
+              Across the stack.
+              <br />
+              Close to the product.
+            </h2>
           </div>
-        </p>
+          <div className={classes.Description}>
+            <p className={classes.Lead}>
+              I’m Aryan, a Full Stack Engineer who enjoys making complex
+              products feel straightforward to use.
+            </p>
+            <p>
+              My work spans React and Next.js interfaces, Node.js services, and
+              the authentication architecture that connects them. At
+              Techolution, I helped build enterprise identity products from
+              inception to client delivery, leading a cross-functional team
+              while staying hands-on.
+            </p>
+            <p>
+              I’ve also built interaction-heavy document extraction workflows
+              and a Word add-in for legal teams. Today, I’m bringing that same
+              product thinking to MacroIntel, my full-stack financial analytics
+              project.
+            </p>
+            <div className={classes.Actions}>
+              <a className="text-link" href="#experience">
+                Explore my experience <span aria-hidden="true">↗</span>
+              </a>
+              <ResumeLink className="text-link" />
+            </div>
+          </div>
+        </div>
+        <dl className={classes.Highlights}>
+          {highlights.map(([value, label]) => (
+            <div key={value}>
+              <dt>{value}</dt>
+              <dd>{label}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default AboutV2;
+}

@@ -1,0 +1,16 @@
+{
+  "context": "Initial uncompressed Python preview before LazyMotion optimization and label fixes; not comparable to a live deployment score.",
+  "scores": {
+    "performance": 72,
+    "accessibility": 100,
+    "best-practices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "first-contentful-paint": "3.5\u00a0s",
+    "largest-contentful-paint": "3.7\u00a0s",
+    "total-blocking-time": "400\u00a0ms",
+    "cumulative-layout-shift": "0"
+  },
+  "bundleGzipKB": 95.49
+}

@@ -1,82 +1,77 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-
+import { useState } from 'react';
+import { useReducedMotion } from 'framer-motion';
+import { FiPause, FiPlay } from 'react-icons/fi';
 import './InfiniteScroll.scss';
-const COLORS = [
-  '#bbf7d0',
-  '#99f6e4',
-  '#bfdbfe',
-  '#ddd6fe',
-  '#f5d0fe',
-  '#fed7aa',
-  '#fee2e2',
+const rows = [
+  ['React', 'Next.js', 'TypeScript', 'Interfaces'],
+  ['Node.js', 'Express', 'REST APIs', 'Services'],
+  ['OAuth 2.0', 'OIDC', 'RBAC', 'Identity'],
+  ['MongoDB', 'Python', 'MT5', 'Data'],
+  ['HMAC', 'Multi-tenancy', 'SSO', 'Architecture'],
 ];
-const TAGS = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'C',
-  'C++',
-  'Python',
-  'Tailwind',
-  'React',
-  'Next.js',
-  'Material',
-  'UI/UX',
-  'Node.js',
-  'Express.js',
-  'Framer',
-  'Frontend',
-];
-const DURATION = 18000;
-const ROWS = 10;
-const TAGS_PER_ROW = 10;
-
-const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
-const shuffle = (arr) => [...arr].sort(() => 0.5 - Math.random());
-
-const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {
+export default function InfiniteScroll() {
+  const [paused, setPaused] = useState(false);
+  const reducedMotion = useReducedMotion();
   return (
     <div
-      className="loop-slider"
-      style={{
-        '--duration': `${duration}ms`,
-        '--direction': reverse ? 'reverse' : 'normal',
-      }}
+      className={`stack-motion ${paused || reducedMotion ? 'stack-paused' : ''}`}
     >
-      <div className="inner">
-        {children}
-        {children}
+      <div className="stack-rows" aria-hidden="true">
+        {rows.map((row, i) => (
+          <div
+            key={i}
+            className="stack-row"
+            style={{
+              '--duration': `${28 + i * 3}s`,
+              '--direction': i % 2 ? 'reverse' : 'normal',
+            }}
+          >
+            <div className="stack-track">
+              {[0, 1].map((copy) => (
+                <div className="stack-copy" key={copy}>
+                  {row.map((tag) => (
+                    <span className="stack-tag" key={tag}>
+                      <span>#</span>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      <p className="stack-sr">
+        React, Next.js, TypeScript, Node.js, Express, MongoDB, Python, and
+        enterprise identity.
+      </p>
+      <div className="stack-caption">
+        <span>From client to service.</span>
+        <button
+          type="button"
+          onClick={() => setPaused(!paused)}
+          aria-label={
+            reducedMotion
+              ? 'Motion reduced'
+              : paused
+                ? 'Play motion: technology animation'
+                : 'Pause motion: technology animation'
+          }
+          aria-pressed={paused}
+          disabled={!!reducedMotion}
+        >
+          {paused || reducedMotion ? (
+            <FiPlay aria-hidden="true" />
+          ) : (
+            <FiPause aria-hidden="true" />
+          )}
+          {reducedMotion
+            ? 'Motion reduced'
+            : paused
+              ? 'Play motion'
+              : 'Pause motion'}
+        </button>
       </div>
     </div>
   );
-};
-
-const Tag = ({ text }) => (
-  <div className="tag">
-    <span>#</span> {text}
-  </div>
-);
-
-const InfiniteScroll = () => (
-  <div className="app">
-    <div className="tag-list">
-      {[...new Array(ROWS)].map((_, i) => (
-        <InfiniteLoopSlider
-          key={i}
-          duration={random(DURATION - 5000, DURATION + 5000)}
-          reverse={i % 2}
-        >
-          {shuffle(TAGS)
-            .slice(0, TAGS_PER_ROW)
-            .map((tag) => (
-              <Tag text={tag} key={tag} />
-            ))}
-        </InfiniteLoopSlider>
-      ))}
-      <div className="fade" />
-    </div>
-  </div>
-);
-
-export default InfiniteScroll;
+}

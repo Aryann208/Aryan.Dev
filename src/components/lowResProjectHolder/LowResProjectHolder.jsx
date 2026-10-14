@@ -1,10 +1,7 @@
 import React from 'react';
 import classes from './LowResProjectHolder.module.css';
-import TechStack from '../techStack/TechStack';
-import TMDB from '../assets/images/TMDB.jpg';
 import NormalButton from '../normalButton/NormalButton';
 import { BsBrowserChrome, BsGithub } from 'react-icons/bs';
-import { AiFillGithub } from 'react-icons/ai';
 
 const text =
   'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum maiores magni doloribus placeat optio rerum dolorum libero beatae earum ipsam debitis mollitia, dolore enim suscipit, ratione iusto esse, non architecto. Aliquid nisi labore cupiditate, cumque illo .';
@@ -37,10 +34,10 @@ const LowResProjectHolder = ({
         <div className={classes.DescriptionContainer}>
           <p className={classes.RegularText}>{description}</p>
           <div className={classes.TechStackContainer}>
-            <a href={webLink} target="_blank">
+            <a href={webLink} target="_blank" rel="noopener noreferrer">
               <NormalButton icon={<BsBrowserChrome />} />
             </a>
-            <a href={repoLink} target="_blank">
+            <a href={repoLink} target="_blank" rel="noopener noreferrer">
               <NormalButton icon={<BsGithub />} />
             </a>
           </div>

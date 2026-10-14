@@ -1,0 +1,308 @@
+[
+  {
+    "width": 390,
+    "violations": [],
+    "passes": 41,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "summary": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".Navbar_toggle__Ag0pt > span[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\">\u2212</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>React</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Next.js</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>TypeScript</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Node.js</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Express</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>REST APIs</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>OAuth 2.0</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>OIDC</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>RBAC</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".Projects_detectedRegion__P8arN > span"
+            ],
+            "html": "<span>Total</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [
+              ".Projects_detectedRegion__P8arN > strong"
+            ],
+            "html": "<strong>Extracted value</strong>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [
+              ".Projects_flowArrow__\\+PhlW"
+            ],
+            "html": "<span class=\"Projects_flowArrow__+PhlW\" aria-hidden=\"true\">\u2192</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              ".Projects_fieldStatus__UVmGg > span[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\">\u2713</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              "a[href$=\"#home\"] > span[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\">\u2191</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "violations": [],
+    "passes": 41,
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "summary": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "nodes": [
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>React</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Next.js</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>TypeScript</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(1) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(4)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Interfaces</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Node.js</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Express</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>REST APIs</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(2) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(4)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Services</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>OAuth 2.0</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>OIDC</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>RBAC</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(3) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(4)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Identity</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(4) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>MongoDB</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(4) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Python</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(4) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>MT5</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(4) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(4)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Data</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(5) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(1)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>HMAC</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(5) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(2)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Multi-tenancy</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(5) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(3)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>SSO</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".stack-row:nth-child(5) > .stack-track > .stack-copy:nth-child(1) > .stack-tag:nth-child(4)"
+            ],
+            "html": "<span class=\"stack-tag\"><span>#</span>Architecture</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "target": [
+              ".Projects_detectedRegion__P8arN > span"
+            ],
+            "html": "<span>Total</span>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [
+              ".Projects_detectedRegion__P8arN > strong"
+            ],
+            "html": "<strong>Extracted value</strong>",
+            "summary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "target": [
+              ".Projects_flowArrow__\\+PhlW"
+            ],
+            "html": "<span class=\"Projects_flowArrow__+PhlW\" aria-hidden=\"true\">\u2192</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              ".Projects_fieldStatus__UVmGg > span[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\">\u2713</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          },
+          {
+            "target": [
+              "a[href$=\"#home\"] > span[aria-hidden=\"true\"]"
+            ],
+            "html": "<span aria-hidden=\"true\">\u2191</span>",
+            "summary": "Fix any of the following:\n  Element content contains only non-text characters"
+          }
+        ]
+      }
+    ]
+  }
+]

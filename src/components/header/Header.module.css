@@ -1,166 +1,174 @@
-.headerpseudo {
-  background-image: url('../assets/images/darkbg.jpg');
-  z-index: -111;
-}
-
-.Header {
-  min-height: 100vh;
-  width: 100%;
-  font-family: JosefinSans !important;
-  font-family: Cabinet !important;
+.hero {
   display: grid;
-  position: relative;
-  margin: 0;
-
-  /* padding-left: 5em; */
-  grid-template-columns: 7fr 4fr;
-  text-align: right;
-  background-color: var(--primary);
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  min-height: min(880px, calc(100svh - 84px));
+  background: var(--primary);
+}
+.intro {
   color: white;
-  color: var(--secondary);
-  box-sizing: border-box;
-  /* border: 11px solid pink; */
-}
-.LeftSection {
-  /* display: grid;
-
-  grid-template-rows: 20% 30% 20%; */
-  display: grid;
-  position: relative;
-  place-content: center;
-  width: fit-content;
-  block-size: fit-content;
-  gap: 3em;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-}
-.BottomAlignText {
-  padding-left: 4em;
-  /* border: 1px white solid; */
+  padding: clamp(50px, 6vw, 90px) clamp(24px, 5.5vw, 88px);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-.TechStack {
-  /* border: 1px white solid; */
-  display: flex;
-  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: white;
-  margin: auto;
-  height: 7em;
-  width: 50%;
-  background: rgba(248, 220, 193, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(18.5px);
-  -webkit-backdrop-filter: blur(18.5px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
-.RightSection {
-  /* border: 1px white solid; */
-
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Lato !important;
+.kicker {
   color: var(--skin);
-
-  background-color: white;
+  margin-bottom: 28px;
 }
-.NavigationListSpan {
+.intro h1 {
+  font-size: clamp(4rem, 7.4vw, 7.2rem);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+}
+.nameBreak {
+  display: none;
+}
+.period {
+  color: var(--skin);
+}
+.role {
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
+  color: var(--skin);
+  letter-spacing: -0.025em;
+  margin-top: 18px;
+}
+.role span {
+  color: #c6d6f2;
+}
+.headline {
+  font-size: clamp(1.8rem, 2.7vw, 2.6rem);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  margin-top: 44px;
+}
+.description {
+  max-width: 520px;
+  margin-top: 18px;
+  font-size: 1.1rem;
+  color: #e5dce9;
+  line-height: 1.65;
+}
+.actions {
   display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  align-items: flex-end;
-  font-size: 10em;
-  background-color: var(--skin);
-  border-radius: 20px 0 0 0;
-  /* border-bottom: 4px solid white; */
-  margin: 0.1em 0;
-  /* border-top: 4px solid white; */
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
 }
-.NavigationList {
-  font-weight: 200;
-  /* padding: 5em 0em 5em 0; */
-  /* margin-right: 2em; */
-  list-style: none;
+.resume:hover {
+  color: var(--primary);
+  background: var(--skin);
+}
+.socials {
   display: flex;
-  justify-content: flex-end;
-  text-align: right;
-  flex-direction: column;
-  color: var(--red);
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  margin-top: 28px;
 }
-
-.RegularText {
+.socials a {
+  min-height: 44px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: var(--skin);
+}
+.socials a:hover {
+  color: white;
+}
+.intro :focus-visible {
+  outline-color: var(--skin);
+}
+.visual {
+  background: #fff;
+  color: var(--primary);
+  padding: 46px clamp(22px, 3vw, 48px) 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 5em;
-  text-align: center;
-  width: 100%;
-  width: fit-content;
-  block-size: fit-content;
-  font-size: 1.5em;
+  gap: 32px;
+  min-width: 0;
 }
-.Heading {
-  font-size: 7em;
-  font-family: Cabinet Bold;
-}
-.Heading2 {
-  font-size: 3.5em;
-  font-weight: 600;
-  color: var(--skin) !important;
-}
-.QuotationText {
-  display: inline;
-  font-size: inherit;
-  color: var(--bluewhite);
-  color: #f4f4f4;
-}
-.EnhancedText {
-  color: white;
-}
-.SocialButtons {
+.visualLabel {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.8rem;
 }
-
-@media screen and (max-width: 850px) {
-  .Header {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 200vh;
-
-    width: 100%;
+.visualNote {
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+}
+.scroll {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-top: 1px solid #42205730;
+  padding-top: 20px;
+}
+@media (min-width: 1200px) {
+  .nameBreak {
+    display: block;
   }
-  .LeftSection {
-    min-height: 80vh;
+}
+@media (max-width: 850px) {
+  .hero {
+    grid-template-columns: 1fr;
   }
-  .RightSection {
-    min-height: 40vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    font-family: Lato !important;
-    color: var(--skin);
-
-    background-color: var(--primary);
+  .intro {
+    padding: 52px 24px 42px;
   }
-  .TechStack {
-    width: 70%;
-    margin-bottom: 10em;
+  .intro h1 {
+    font-size: clamp(3.8rem, 11vw, 6.4rem);
+  }
+  .kicker {
+    font-size: 0.68rem;
+    margin-bottom: 26px;
+  }
+  .headline {
+    margin-top: 32px;
+  }
+  .description {
+    font-size: 1.05rem;
+    max-width: 600px;
+  }
+  .visual {
+    padding: 28px 24px;
+    gap: 20px;
+  }
+  .visualNote {
+    display: none;
+  }
+  .scroll {
+    margin-top: 0;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .intro {
+    padding-inline: 20px;
+  }
+  .intro h1 {
+    font-size: 3.6rem;
+  }
+  .role {
+    font-size: 1.22rem;
+  }
+  .actions {
+    gap: 10px;
+  }
+  .actions a {
+    padding-inline: 18px;
+  }
+  .socials {
+    gap: 20px;
   }
 }

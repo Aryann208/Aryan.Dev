@@ -1,8 +1,6 @@
 import React from 'react';
 import classes from './About.module.css';
-import Dev from '../assets/images/dev2.jpg';
 import RoundedButton from '../assets/roundedButton/RoundedButton';
-import InfiniteScroll from '../assets/infiniteScroll/InfiniteScollAnimation';
 const About = () => {
   return (
     <div className={classes.About} id="about">

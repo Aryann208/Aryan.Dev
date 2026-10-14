@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './LowResProjectHolderV2.module.css';
-import NormalButton from '../normalButton/NormalButton';
 import { BsBrowserChrome, BsGithub } from 'react-icons/bs';
 
 const text =
@@ -32,7 +31,7 @@ const LowResProjectHolderV2 = ({
           <p>{description}</p>
         </div>
         <div className={classes.btnContainer}>
-          <a target="_blank" href={repoLink}>
+          <a target="_blank" rel="noopener noreferrer" href={repoLink}>
             <button className={classes.btn}>
               <span className={classes.btnContent}>
                 {' '}
@@ -42,7 +41,7 @@ const LowResProjectHolderV2 = ({
             </button>
           </a>
 
-          <a target="_blank" href={webLink}>
+          <a target="_blank" rel="noopener noreferrer" href={webLink}>
             <button className={classes.btn}>
               <span className={classes.btnContent}>
                 {' '}

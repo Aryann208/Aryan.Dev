@@ -1,0 +1,61 @@
+[
+  {
+    "url": "https://macrointel-web.onrender.com/integrations",
+    "status": 200,
+    "finalUrl": "https://macrointel-web.onrender.com/integrations"
+  },
+  {
+    "url": "https://github.com/Aryann208/MacroIntel-Fullstack",
+    "status": 200,
+    "finalUrl": "https://github.com/Aryann208/MacroIntel-Fullstack"
+  },
+  {
+    "url": "https://tmdb-phi.vercel.app/",
+    "status": 200,
+    "finalUrl": "https://tmdb-phi.vercel.app/"
+  },
+  {
+    "url": "https://github.com/Aryann208/TMDB",
+    "status": 200,
+    "finalUrl": "https://github.com/Aryann208/TMDB"
+  },
+  {
+    "url": "https://react-recipes-mauve.vercel.app/",
+    "status": 200,
+    "finalUrl": "https://react-recipes-mauve.vercel.app/"
+  },
+  {
+    "url": "https://github.com/Aryann208/React-Recipes",
+    "status": 200,
+    "finalUrl": "https://github.com/Aryann208/React-Recipes"
+  },
+  {
+    "url": "https://metaverse-p92w.vercel.app/",
+    "status": 200,
+    "finalUrl": "https://metaverse-p92w.vercel.app/"
+  },
+  {
+    "url": "https://github.com/Aryann208/Metaverse",
+    "status": 200,
+    "finalUrl": "https://github.com/Aryann208/Metaverse"
+  },
+  {
+    "url": "https://crwn-clothing-jet.vercel.app/",
+    "status": 200,
+    "finalUrl": "https://crwn-clothing-jet.vercel.app/"
+  },
+  {
+    "url": "https://github.com/Aryann208/Crwn-clothing",
+    "status": 200,
+    "finalUrl": "https://github.com/Aryann208/Crwn-clothing"
+  },
+  {
+    "url": "https://github.com/Aryann208",
+    "status": 200,
+    "finalUrl": "https://github.com/Aryann208"
+  },
+  {
+    "url": "https://www.linkedin.com/in/aryan-trivedi-14279a190/",
+    "status": 999
+  }
+]

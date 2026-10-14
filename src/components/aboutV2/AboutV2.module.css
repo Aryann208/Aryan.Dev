@@ -1,125 +1,79 @@
-.AboutContainer {
-  font-family: Cabinet;
-  background-color: #f4f4f4;
-  color: black;
-  min-height: 80vh;
-  max-height: 120vh;
-  padding: 10% 15%;
-  padding-top: 10%;
-  padding-left: 5%;
-  position: relative;
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.Title {
-  font-family: Cabinet Bold;
-  font-size: 7em;
-  text-align: left;
-  height: 10vh;
+.About {
+  padding: clamp(64px, 8vw, 120px) clamp(20px, 5vw, 80px);
+  background: var(--paper);
   color: var(--primary);
+}
+.Intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: clamp(32px, 7vw, 110px);
+}
+.Heading {
+  margin-top: 22px;
+  max-width: 550px;
 }
 .Description {
-  font-size: 2em;
-  font-weight: 500;
-  text-align: left;
-  line-height: 150%;
-  letter-spacing: 0.05em;
+  color: var(--ink);
 }
-
-.btnContainer {
-  width: 80%;
-  position: relative;
-  /* border: 10px black solid; */
-  margin: 5em 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.Description p + p {
+  margin-top: 22px;
 }
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  width: 100%;
-  height: 3.5em;
-  padding: 0em 5em;
-  border: 1px black solid;
-
+.Lead {
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  line-height: 1.45;
   color: var(--primary);
-}
-.btnTitle {
-  margin-left: 0.5em;
-  font-size: 1.2em;
-  color: inherit;
   font-weight: 500;
 }
-.Icon {
-  display: none;
-  position: relative;
-  width: 1.5em;
-  height: 2.5em;
-  /* border: red 2px solid; */
-
-  /* font-size: 1.2em; */
+.Actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin-top: 24px;
+  color: var(--primary);
+  font-size: 1rem;
 }
-.a {
-  height: 3em;
+.Highlights {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin: clamp(40px, 6vw, 80px) 0 0;
+  padding: 28px 0 0;
+  border-top: 1px solid rgb(66 32 87 / 22%);
 }
-.btn:hover {
-  border: 2px solid var(--primary);
-  color: white !important;
-  background-color: var(--primary);
-  cursor: pointer;
-  transition: background-color 0.5s;
+.Highlights dt {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.04em;
 }
-
-@media screen and (max-width: 750px) {
-  .AboutContainer {
-    padding: 10% 5%;
-
-    padding-top: 10%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 110vh;
+.Highlights dd {
+  margin: 8px 0 0;
+  color: #5c5262;
+  font-size: 1rem;
+}
+@media (max-width: 800px) {
+  .Intro {
+    grid-template-columns: minmax(0, 1fr);
   }
-
-  .btnContainer {
-    position: relative;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    max-height: 19vh;
-    padding: 0.5em 0;
-    margin-top: 1em;
-    /* border: 1px solid black; */
-  }
-  .btnContainer > a {
-    height: 3em;
-  }
-
-  .btn {
-    display: flex;
-    margin: 0 auto;
-    min-width: 100%;
-    min-height: 7vh;
-    padding: 0em 40%;
-    border: 1px black solid;
-
-    color: var(--primary);
-  }
-  .Title {
-    font-family: Cabinet Bold;
-    font-size: 7em;
-    text-align: left;
-    height: 10vh;
-    color: var(--primary);
+  .Heading {
+    max-width: 620px;
   }
 }
-
-@media screen and (max-width: 450px) {
-  .AboutContainer {
-    min-height: 120vh;
+@media (max-width: 500px) {
+  .Highlights {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .Highlights > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: 16px;
+  }
+  .Highlights dt {
+    font-size: 1.75rem;
+  }
+  .Highlights dd {
+    margin: 0;
   }
 }

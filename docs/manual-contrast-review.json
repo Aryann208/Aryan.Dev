@@ -1,0 +1,38 @@
+[
+  {
+    "element": "Purple labels / darkest peach gradient",
+    "foreground": "#422057",
+    "background": "#e6c8ad",
+    "contrast": 8.4
+  },
+  {
+    "element": "Crimson hash / darkest peach gradient",
+    "foreground": "#a41c3c",
+    "background": "#e6c8ad",
+    "contrast": 4.71
+  },
+  {
+    "element": "PDF region text",
+    "foreground": "#422057",
+    "background": "#e5d5f0",
+    "contrast": 9.59
+  },
+  {
+    "element": "White menu glyph",
+    "foreground": "#ffffff",
+    "background": "#422057",
+    "contrast": 13.33
+  },
+  {
+    "element": "Peach status glyph",
+    "foreground": "#f8dcc1",
+    "background": "#422057",
+    "contrast": 10.15
+  },
+  {
+    "element": "Footer arrow",
+    "foreground": "#d6c8de",
+    "background": "#422057",
+    "contrast": 8.36
+  }
+]

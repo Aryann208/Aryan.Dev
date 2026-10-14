@@ -1,11 +1,8 @@
 import React from 'react';
 import classes from './ProjectHolder.module.css';
-import TechStack from '../techStack/TechStack';
-import TMDB from '../assets/images/TMDB.jpg';
 import LowResProjectHolder from '../lowResProjectHolder/LowResProjectHolder';
 import NormalButton from '../normalButton/NormalButton';
 import { BsBrowserChrome, BsGithub } from 'react-icons/bs';
-import { AiFillGithub } from 'react-icons/ai';
 const text =
   'Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing';
 const ProjectHolder = ({
@@ -50,10 +47,10 @@ const ProjectHolder = ({
             </p>
           </div>
           <div className={classes.TechStackContainer}>
-            <a href={webLink} target="_blank">
+            <a href={webLink} target="_blank" rel="noopener noreferrer">
               <NormalButton icon={<BsBrowserChrome />} />
             </a>
-            <a href={repoLink} target="_blank">
+            <a href={repoLink} target="_blank" rel="noopener noreferrer">
               <NormalButton icon={<BsGithub />} />
             </a>
           </div>
