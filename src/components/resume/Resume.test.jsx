@@ -35,3 +35,16 @@ test('provided PDF downloads under a recruiter-friendly filename', () => {
   expect(link).toHaveAttribute('href', '/Aryan-Trivedi-Resume.pdf');
   expect(link).toHaveAttribute('download', 'Aryan-Trivedi-Resume.pdf');
 });
+
+test('shared Drive resume opens the supplied public URL in a new tab', () => {
+  profile.resume = suppliedResume;
+  render(<ResumeLink />);
+  const link = screen.getByRole('link', { name: 'View resume (PDF)' });
+  expect(link).toHaveAttribute(
+    'href',
+    'https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing',
+  );
+  expect(link).toHaveAttribute('target', '_blank');
+  expect(link).toHaveAttribute('rel', 'noopener noreferrer');
+  expect(link).not.toHaveAttribute('download');
+});

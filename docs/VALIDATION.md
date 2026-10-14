@@ -2,6 +2,10 @@
 
 Validated on October 14, 2026 in the existing Windows checkout. Source remains local; no Git push or Vercel production deployment was performed.
 
+## Resume URL follow-up
+
+The current resume actions now use [the supplied Google Drive URL](https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing), opening the viewer in a new tab with `noopener noreferrer`. The Drive viewer was checked in a fresh signed-out browser: HTTP 200, Aryan's one-page PDF visible, no sign-in/access barrier. All five actions share this URL; external viewer links do not use the HTML download attribute. See `resume-link-audit.json` and `screenshots/resume-drive.png`. The original PDF asset and its integrity evidence below are retained; the initial full-page screenshots and direct-download checks describe the earlier self-hosted-PDF implementation. The browser harness has been updated to check the current Drive link behavior.
+
 ## Delivered
 
 - Full Stack Engineer positioning, project and resume CTAs, corrected social/email links.

@@ -3,5 +3,6 @@ export const profile = {
   github: 'https://github.com/Aryann208',
   linkedin: 'https://www.linkedin.com/in/aryan-trivedi-14279a190/',
   macrointel: 'https://macrointel-web.onrender.com/integrations',
-  resume: '/Aryan-Trivedi-Resume.pdf',
+  resume:
+    'https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing',
 };

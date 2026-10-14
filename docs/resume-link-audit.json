@@ -1,0 +1,12 @@
+{
+  "requestedUrl": "https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing",
+  "unauthenticatedContext": true,
+  "status": 200,
+  "finalUrl": "https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view",
+  "title": "Aryan Trivedi Fullstack Resume 2026.pdf - Google Drive",
+  "screenshot": "docs/screenshots/resume-drive.png",
+  "bodyTextExcerpt": "Aryan Trivedi Fullstack Resume 2026.pdf | Page 1 of 1 | Aryan Trivedi | Full Stack Engineer | React.js | Next.js | Node.js | TypeScript",
+  "assessment": "Public one-page PDF viewer renders in a fresh browser context without signing in or requesting access.",
+  "pageCount": 1,
+  "downloadControlVisible": true
+}

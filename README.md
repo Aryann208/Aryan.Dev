@@ -4,6 +4,9 @@ Aryan Trivedi's portfolio. React 18, Create React App, CSS Modules/Sass and Fram
 
 ## Develop and validate
 
+Use Node.js **24.x**, as declared in `package.json`. Vercel no longer accepts this project's old 18.x selection.
+The strict production build and source lint check were verified with Node.js 24.21.0 after updating this pin.
+
 ```sh
 npm ci
 npm start
@@ -13,15 +16,15 @@ npm run build
 npm run preview
 ```
 
-Vercel remains compatible: Create React App preset, build command `npm run build`, output directory `build`. No environment variables or backend are needed. These changes are local until committed/pushed through the owner's deployment workflow.
+Vercel: select **24.x** under **Project Settings → Build and Deployment → Node.js Version**, use the Create React App preset, build command `npm run build`, and output directory `build`. The repository's `engines.node` pin also selects Node 24 for the next deployment. Deploy the commit containing this pin; redeploying an older commit does not include the change. No environment variables or backend are needed. Local changes take effect after being committed/pushed through the owner's deployment workflow.
 
 ## Content and resume
 
 Shared links and resume URL live in `src/data/profile.js`. Experience, projects, and skills are maintained in their corresponding component data arrays.
 
-The supplied one-page 2026 resume is integrated at `public/Aryan-Trivedi-Resume.pdf`, unchanged from the source PDF. Its identity, page count and SHA-256 match were verified. Aryan explicitly approved the resume's 90%/80% figures for public disclosure on October 14, 2026. Page copy uses the qualitative achievements. The unrelated old local PDF was removed.
+All five resume links use the shared Google Drive viewer URL in `profile.resume`, opening in a new tab with a "View resume (PDF)" label. Keep the Drive file shared as **Anyone with the link → Viewer** so recruiters can open it without signing in. Aryan explicitly approved the resume's 90%/80% figures for public disclosure on October 14, 2026. Page copy uses the qualitative achievements. The verified one-page PDF is also retained as an unlinked repository asset.
 
-For future updates, replace `public/Aryan-Trivedi-Resume.pdf`. Verify its identity, one-page length, HTTP status, `application/pdf` content type, and browser download after building. The shared ResumeLink updates navigation, hero, about, contact and resume-section actions. A tested email fallback is available if `profile.resume` is set to `null`.
+For future updates, replace the file in Drive while retaining its sharing URL, or update `profile.resume` to a new public link. Verify access in a signed-out browser. The shared ResumeLink updates navigation, hero, about, contact and resume-section actions. External viewer links do not use the HTML download attribute. A tested email fallback is available if `profile.resume` is set to `null`.
 
 No confidential client names, private screenshots or fabricated professional demo/source links are published. MacroIntel's image is a real capture of public demo-account analytics. Enterprise diagrams are labeled concept illustrations. TMDB retains its repository link; its demo was omitted after browser checks found failing upstream API calls.
 

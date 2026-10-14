@@ -4,8 +4,6 @@ Usage: python scripts/visual-qa.py [http://localhost:3001]
 import json
 import re
 import sys
-import hashlib
-import tempfile
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
@@ -72,24 +70,15 @@ with sync_playwright() as p:
             page.locator('#projects').screenshot(path=str(out / ('after-' + name + '-projects.png')), style='header, .skip-link, .progress-bar { visibility: hidden !important; }')
         report['viewports'].append({'width': width, 'scrollWidth': overflow, 'imagesLoaded': len(images), 'navigation': 'pass', 'caseStudies': 'pass'})
 
-    # Check the real PDF bytes and browser download from the built application.
-    pdf_response = context.request.get(base + '/Aryan-Trivedi-Resume.pdf')
-    assert pdf_response.status == 200
-    assert 'application/pdf' in pdf_response.headers['content-type']
-    pdf_bytes = pdf_response.body()
-    assert pdf_bytes.startswith(b'%PDF-')
-    assert hashlib.sha256(pdf_bytes).digest() == hashlib.sha256(Path('public/Aryan-Trivedi-Resume.pdf').read_bytes()).digest()
-    assert page.locator('a[download="Aryan-Trivedi-Resume.pdf"]').count() == 5
-    with page.expect_download() as download_event:
-        page.locator('nav[aria-label="Main navigation"] a[download]').click()
-    download = download_event.value
-    assert download.suggested_filename == 'Aryan-Trivedi-Resume.pdf'
-    assert download.failure() is None
-    with tempfile.TemporaryDirectory() as temp_dir:
-        downloaded = Path(temp_dir) / download.suggested_filename
-        download.save_as(downloaded)
-        assert downloaded.read_bytes() == pdf_bytes
-    report['resume'] = {'status':200, 'mime':pdf_response.headers['content-type'], 'downloadFilename':download.suggested_filename, 'sha256':hashlib.sha256(pdf_bytes).hexdigest(), 'links':5}
+    # Public Drive accessibility is separately recorded in resume-link-audit.json.
+    resume_url = 'https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing'
+    resume_links = page.locator('a[href="' + resume_url + '"]')
+    assert resume_links.count() == 5
+    for link in resume_links.all():
+        assert link.get_attribute('target') == '_blank'
+        assert {'noopener','noreferrer'}.issubset(set(link.get_attribute('rel').split()))
+        assert link.get_attribute('download') is None
+    report['resume'] = {'url':resume_url, 'links':5, 'opensInNewTab':True, 'type':'Google Drive viewer'}
 
     # A fresh page checks real sequential keyboard focus and explicit motion controls.
     keyboard = context.new_page()
