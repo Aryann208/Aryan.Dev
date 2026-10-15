@@ -71,7 +71,7 @@ with sync_playwright() as p:
         report['viewports'].append({'width': width, 'scrollWidth': overflow, 'imagesLoaded': len(images), 'navigation': 'pass', 'caseStudies': 'pass'})
 
     # Public Drive accessibility is separately recorded in resume-link-audit.json.
-    resume_url = 'https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing'
+    resume_url = 'https://drive.google.com/file/d/17Fx5T48j_gY09q2s9e2JUUh6qTVPiSof/view?usp=sharing'
     resume_links = page.locator('a[href="' + resume_url + '"]')
     assert resume_links.count() == 5
     for link in resume_links.all():

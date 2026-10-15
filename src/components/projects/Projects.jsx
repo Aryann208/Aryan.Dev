@@ -2,6 +2,7 @@ import React from 'react';
 import { m, useReducedMotion } from 'framer-motion';
 import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import classes from './Projects.module.css';
+import { profile } from '../../data/profile';
 import tmdb from '../assets/images/tmdb1.jpg';
 import delicious from '../assets/images/recipe1.jpg';
 import metaverse from '../assets/images/metaverse1.jpg';
@@ -286,7 +287,7 @@ export default function Projects() {
         </ul>
         <div className={classes.projectActions}>
           <ExternalLink
-            href="https://macrointel-web.onrender.com/integrations"
+            href={profile.macrointel}
             className="button button-primary"
             label="Explore the MacroIntel live demo"
           >

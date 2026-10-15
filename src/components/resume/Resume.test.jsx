@@ -42,7 +42,7 @@ test('shared Drive resume opens the supplied public URL in a new tab', () => {
   const link = screen.getByRole('link', { name: 'View resume (PDF)' });
   expect(link).toHaveAttribute(
     'href',
-    'https://drive.google.com/file/d/1xyfVMh-k9vBhASWRcLaLL9mxcwkJp35L/view?usp=sharing',
+    'https://drive.google.com/file/d/17Fx5T48j_gY09q2s9e2JUUh6qTVPiSof/view?usp=sharing',
   );
   expect(link).toHaveAttribute('target', '_blank');
   expect(link).toHaveAttribute('rel', 'noopener noreferrer');

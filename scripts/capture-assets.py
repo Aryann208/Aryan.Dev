@@ -4,7 +4,7 @@ from playwright.sync_api import sync_playwright
 with sync_playwright() as p:
     browser = p.chromium.launch(headless=True)
     page = browser.new_page(viewport={'width': 1440, 'height': 1000}, device_scale_factor=1)
-    page.goto('https://macrointel-web.onrender.com/integrations', wait_until='networkidle', timeout=90000)
+    page.goto('https://macro-intel-frontend.vercel.app/integrations', wait_until='networkidle', timeout=90000)
     heading = page.get_by_role('heading', name='Account metrics', exact=True)
     page.evaluate('(y) => window.scrollTo(0,y)', heading.bounding_box()['y'] + page.evaluate('scrollY') - 100)
     page.wait_for_timeout(1000)

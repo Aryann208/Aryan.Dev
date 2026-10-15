@@ -6,7 +6,7 @@ import urllib.error
 from pathlib import Path
 
 urls = [
-'https://macrointel-web.onrender.com/integrations',
+'https://macro-intel-frontend.vercel.app',
 'https://github.com/Aryann208/MacroIntel-Fullstack',
 'https://tmdb-phi.vercel.app/', 'https://github.com/Aryann208/TMDB',
 'https://react-recipes-mauve.vercel.app/', 'https://github.com/Aryann208/React-Recipes',

@@ -22,7 +22,7 @@ Vercel: select **24.x** under **Project Settings → Build and Deployment → No
 
 Shared links and resume URL live in `src/data/profile.js`. Experience, projects, and skills are maintained in their corresponding component data arrays.
 
-All five resume links use the shared Google Drive viewer URL in `profile.resume`, opening in a new tab with a "View resume (PDF)" label. Keep the Drive file shared as **Anyone with the link → Viewer** so recruiters can open it without signing in. Aryan explicitly approved the resume's 90%/80% figures for public disclosure on October 14, 2026. Page copy uses the qualitative achievements. The verified one-page PDF is also retained as an unlinked repository asset.
+All five resume links use the shared Google Drive viewer URL in `profile.resume`, opening in a new tab with a "View resume (PDF)" label. Keep the Drive file shared as **Anyone with the link → Viewer** so recruiters can open it without signing in. Aryan explicitly approved the resume's 90%/80% figures for public disclosure on October 14, 2026. Page copy uses the qualitative achievements. The earlier supplied PDF is retained as an unlinked archive; the Drive link is the current resume source.
 
 For future updates, replace the file in Drive while retaining its sharing URL, or update `profile.resume` to a new public link. Verify access in a signed-out browser. The shared ResumeLink updates navigation, hero, about, contact and resume-section actions. External viewer links do not use the HTML download attribute. A tested email fallback is available if `profile.resume` is set to `null`.
 
